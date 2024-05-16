@@ -31,7 +31,7 @@ class ModeloBase(BaseModel):
     visibilidad: bool
     resumen: Optional[str] = None
     idUser: int
-
+    imagen: Optional[str] = None
 
 class ModeloCreate(ModeloBase):
     pass
@@ -55,6 +55,7 @@ class ModeloCount(BaseModel):
 class ParteBase(BaseModel):
     nombre: str
     idModelo: int
+    imagen: Optional[str] = None
 
 
 class ParteCreate(ParteBase):

@@ -23,6 +23,7 @@ class Modelo(Base):
     nombre = Column(String, index=True)
     imprimacion = Column(String, index=True)
     visibilidad = Column(Boolean, index=True)
+    imagen = Column(String)
     resumen = Column(String, index=True)
     idUser = Column(Integer, ForeignKey("users.id"))
 
@@ -36,6 +37,7 @@ class Parte(Base):
 
     id = Column(Integer, primary_key=True)
     nombre = Column(String, index=True)
+    imagen = Column(String)
     idModelo = Column(Integer, ForeignKey("modelos.id"))
 
     owner = relationship("Modelo", back_populates="partes")

@@ -2,6 +2,7 @@
     <v-col cols="4">
         <v-card class="pa-4">
             <router-link :to="'/partes/' + parte.id">
+                <img v-if="parte.imagen" :src="`/images/${parte.imagen}`" style="width: 100%;">
                 <v-card-title>{{ capitalize(parte.nombre) }}</v-card-title>
             </router-link>
         </v-card>

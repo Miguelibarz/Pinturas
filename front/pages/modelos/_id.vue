@@ -1,9 +1,16 @@
 <template>
   <v-card class="pa-5">
     <v-row>
-      <v-col cols="9">
-        <v-card-title v-if="modelo" class="text-h2 pa-4">{{ capitalize(modelo.nombre) }}</v-card-title>
+      <v-col cols="2">
+        <v-card style="max-width: 100%; height: auto;" class="rounded-lg">
+          <img v-if="modelo && modelo.imagen" :src="`/images/${modelo.imagen}`" alt="Imagen del modelo" 
+            style="width: 100%;">
+        </v-card>
       </v-col>
+      <v-col cols="7">
+        <v-card-title v-if="modelo" class="text-h2 pa-4">{{ capitalize(modelo.nombre) }} </v-card-title>
+      </v-col>
+
       <v-col cols="3">
         <v-btn v-if="modelo" :to="`../Add/parte/${modelo.id}`">
           <v-icon>mdi-plus</v-icon>
@@ -74,7 +81,7 @@ export default {
         });
         // Redirigir a /modelos
         this.$router.push('/modelos');
-       } catch (error) {
+      } catch (error) {
         console.error('Error al eliminar el modelo:', error);
       }
     }

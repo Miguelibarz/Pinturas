@@ -1,7 +1,13 @@
 <template>
   <v-card class="pa-5">
     <v-row>
-      <v-col cols="9">
+      <v-col cols="2">
+        <v-card style="max-width: 100%; height: auto;" class="rounded-lg">
+          <img v-if="parte && parte.imagen" :src="`/images/${parte.imagen}`"
+            style="width: 100%;">
+        </v-card>
+      </v-col>
+      <v-col cols="7">
         <v-card-title v-if="parte" class="text-h2 pa-4">{{ capitalize(parte.nombre) }}</v-card-title>
       </v-col>
       <v-col cols="3">

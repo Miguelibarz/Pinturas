@@ -1,80 +1,84 @@
 <template>
-  <v-card class="pa-5">
-    <v-row align="center">
-      <v-col cols="10">
-        <v-card-title v-if="modelo" class="text-h2 pa-4">{{ capitalize(modelo.nombre) }}</v-card-title>
-      </v-col>
-      <v-col cols="2">
-        <v-btn v-if="modelo" :to="`../Add/parte/${modelo.id}`" color="primary">
-          <v-icon>mdi-pencil</v-icon>
-        </v-btn>
-        <v-btn @click="deleteCurrentModel" color="error">
-          <v-icon>mdi-delete</v-icon>
-        </v-btn>
-      </v-col>
-    </v-row>
-    <v-divider class="border-opacity-75 pa-4"></v-divider>
-    <v-card-text class="pa-4 text-h5">Partes:</v-card-text>
-    <v-container class="d-flex">
-      <TarjetaParte v-for="(parte, index) in partes" :key="index" :parte="parte" />
-    </v-container>
+  <v-card class="pa-4">
+    <h1>Crear Nuevo Modelo</h1>
+    <v-form @submit.prevent="crearModelo">
+      <v-text-field v-model="nombre" label="Nombre" required></v-text-field>
+      <v-text-field v-model="imprimacion" label="Imprimación"></v-text-field>
+      <v-checkbox v-model="visibilidad" label="Visible"></v-checkbox>
+      <v-textarea v-model="resumen" label="Resumen"></v-textarea>
+      <input type="file" ref="fileInput" @change="handleFileChange" accept="image/*" />
+      <v-btn type="submit" color="primary">Guardar</v-btn>
+    </v-form>
   </v-card>
 </template>
 
 <script>
-import TarjetaParte from '~/components/TarjetaParte.vue';
-
 export default {
-  components: {
-    TarjetaParte
-  },
   data() {
     return {
-      modelo: null,
-      partes: []
-    };
-  },
-  watch: {
-    '$route.params.id': {
-      immediate: true,
-      handler(newValue) {
-        this.getModelo(newValue);
-      }
+      nombre: '',
+      imprimacion: '',
+      visibilidad: true,
+      resumen: '',
+      imagen: '',
+      file: null,
     }
   },
-  mounted() {
-    this.getModelo(this.$route.params.id);
-  },
   methods: {
-    capitalize(string) {
-      return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+    handleFileChange(event) {
+      this.file = event.target.files[0];
+      const currentDate = new Date();
+      //crea nombre unico con el nombre de la imagen y la fecha
+      this.imagen = currentDate.getTime() + "-" + this.file.name;
     },
-    async getModelo(id) {
-      try {
-        // Fetch model details
-        const responseModelo = await fetch(process.env.API_URL + `/modelos/${id}`);
-        const dataModelo = await responseModelo.json();
-        this.modelo = dataModelo;
+    crearModelo() {
+      const requestBody = {
+        nombre: this.nombre,
+        imprimacion: this.imprimacion,
+        visibilidad: this.visibilidad,
+        resumen: this.resumen,
+        idUser: 1,
+        imagen: this.imagen
+      };
 
-        // Fetch associated partes
-        const responsePartes = await fetch(process.env.API_URL + `/getPartes/${id}`);
-        const dataPartes = await responsePartes.json();
-        this.partes = dataPartes;
-      } catch (error) {
-        console.error('Error fetching modelo:', error);
-      }
-    },
-    async deleteCurrentModel() {
-      try {
-        await fetch(`${process.env.API_URL}/modelos/${this.modelo.id}`, {
-          method: 'DELETE',
-        });
-        // Redirigir a /modelos
+      fetch(process.env.API_URL + '/modelos', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(requestBody)
+
+      }).then(response => {
+        if (!response.ok) {
+          throw new Error('Error al crear el modelo');
+        }
+        else {
+          this.guardarImagen(this.file, this.imagen)
+        };
         this.$router.push('/modelos');
-       } catch (error) {
-        console.error('Error al eliminar el modelo:', error);
+      }).catch(error => {
+        console.error(error);
+      });
+    },
+    async guardarImagen(file, name) {
+      const formData = new FormData();
+      formData.append('file', file, name);
+
+      try {
+        const response = await fetch(process.env.API_URL + '/upload', {
+          method: 'POST',
+          body: formData
+        });
+
+        if (!response.ok) {
+          throw new Error('Error al subir la imagen');
+        }
+
+        const data = await response.json();
+      } catch (error) {
+        console.error(error.message);
       }
     }
   }
-};
+}
 </script>

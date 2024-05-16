@@ -6,6 +6,7 @@
       <v-text-field v-model="modelo.imprimacion" label="Imprimación"></v-text-field>
       <v-checkbox v-model="modelo.visibilidad" label="Visibilidad"></v-checkbox>
       <v-textarea v-model="modelo.resumen" label="Resumen"></v-textarea>
+      
       <!-- Agrega más campos según sea necesario -->
 
       <v-btn type="submit" color="primary">Guardar</v-btn>

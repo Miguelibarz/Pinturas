@@ -1,4 +1,7 @@
-from fastapi import Depends, FastAPI, HTTPException
+import os
+import shutil
+from fastapi import Depends, FastAPI, File, HTTPException, UploadFile
+from fastapi.responses import JSONResponse
 from sqlalchemy.orm import Session
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -33,6 +36,7 @@ tags_metadata = [
     {"name": "Pasos", "description": "APIs for pasos"},
     {"name": "Users", "description": "APIs for users"},
     {"name": "Colores", "description": "APIs for colores"},
+    {"name": "Imagen", "description": "APIs for imagen"},
 ]
 
 
@@ -217,3 +221,19 @@ def delete_color(color_id: int, db: Session = Depends(get_db)):
     
     # Devolver el color eliminado
     return db_color
+
+#IMAGEN
+@app.post("/upload/", tags=["Imagen"])
+async def upload_image(file: UploadFile = File(...)):
+    try:
+        # Crear carpeta si no existe
+        if not os.path.exists("static/images"):
+            os.makedirs("static/images")
+
+        # Guardar la imagen en el servidor
+        with open(f"front/static/images/{file.filename}", "wb") as buffer:
+            shutil.copyfileobj(file.file, buffer)
+
+        return JSONResponse(status_code=200, content={"message": "Imagen subida correctamente"})
+    except Exception as e:
+        return JSONResponse(status_code=500, content={"message": f"Error al subir la imagen: {e}"})

@@ -2,6 +2,10 @@
   <v-col cols="6">
     <v-card class="pa-4">
       <router-link :to="'/modelos/' + modelo.id">
+        <div style="max-width: 100%; height: auto;">
+          <img v-if="modelo && modelo.imagen" :src="`/images/${modelo.imagen}`"
+            style="width: 100%;">
+        </div>
         <div class="modelo-detalle">
           <h2>{{ modelo.nombre }}</h2>
           <p>Resumen: {{ modelo.resumen }}</p>

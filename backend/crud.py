@@ -69,6 +69,7 @@ def create_modelo(db: Session, modelo_create: schemas.ModeloCreate):
         visibilidad=modelo_create.visibilidad,
         resumen=modelo_create.resumen,
         idUser=modelo_create.idUser,
+        imagen=modelo_create.imagen,
     )
     db.add(db_modelo)
     db.commit()
@@ -111,7 +112,7 @@ def get_partes(db: Session, skip: int = 0, limit: int = 100):
 
 
 def create_parte(db: Session, parte_create: schemas.ParteCreate):
-    db_parte = models.Parte(nombre=parte_create.nombre, idModelo=parte_create.idModelo)
+    db_parte = models.Parte(nombre=parte_create.nombre, idModelo=parte_create.idModelo, imagen=parte_create.imagen)
     db.add(db_parte)
     db.commit()
     db.refresh(db_parte)
