@@ -247,3 +247,12 @@ def update_color(db: Session, color_id: int, color_update: schemas.ColorUpdate):
         db.refresh(db_color)
         return db_color
     return None
+
+def delete_color(db: Session, color_id: int):
+    # Buscar el color en la base de datos por su ID y eliminarlo
+    db_color = db.query(models.Color).filter(models.Color.id == color_id).first()
+    if db_color:
+        db.delete(db_color)
+        db.commit()
+    else:
+        raise ValueError("Color not found")

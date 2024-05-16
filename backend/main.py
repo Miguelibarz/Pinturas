@@ -204,3 +204,16 @@ def update_color(
 
     # Devolver el color actualizado
     return db_color
+
+@app.delete("/colores/{color_id}", response_model=schemas.Color, tags=["Colores"])
+def delete_color(color_id: int, db: Session = Depends(get_db)):
+    # Verificar si el color existe en la base de datos
+    db_color = crud.get_color(db, color_id)
+    if db_color is None:
+        raise HTTPException(status_code=404, detail="Color not found")
+    
+    # Eliminar el color de la base de datos
+    crud.delete_color(db, color_id=color_id)
+    
+    # Devolver el color eliminado
+    return db_color

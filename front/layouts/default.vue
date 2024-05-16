@@ -79,6 +79,11 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Modelos',
           to: '/modelos'
+        },
+        {
+          icon: 'mdi-chart-bubble',
+          title: 'Colores',
+          to: '/colores'
         }
       ],
       miniVariant: false,
