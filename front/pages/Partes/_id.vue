@@ -7,17 +7,17 @@
             style="width: 100%;">
         </v-card>
       </v-col>
-      <v-col cols="7">
+      <v-col cols="7" class="align-center d-flex">
         <v-card-title v-if="parte" class="text-h2 pa-4">{{ capitalize(parte.nombre) }}</v-card-title>
       </v-col>
-      <v-col cols="3">
-        <v-btn v-if="parte" :to="`../Add/paso/${parte.id}`">
+      <v-col cols="3" class="d-flex justify-end align-center pa-6">
+        <v-btn class="ma-1" v-if="parte" :to="`../Add/paso/${parte.id}`">
           <v-icon>mdi-plus</v-icon>
         </v-btn>
-        <v-btn v-if="parte" :to="`../modify/parte/${parte.id}`" color="primary">
+        <v-btn class="ma-1" v-if="parte" :to="`../modify/parte/${parte.id}`" color="info">
           <v-icon>mdi-pencil</v-icon>
         </v-btn>
-        <v-btn @click="deleteCurrentParte" color="error">
+        <v-btn class="ma-1" @click="deleteCurrentParte" color="error">
           <v-icon>mdi-delete</v-icon>
         </v-btn>
       </v-col>

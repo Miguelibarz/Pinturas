@@ -9,7 +9,7 @@
       
       <!-- Agrega más campos según sea necesario -->
 
-      <v-btn type="submit" color="primary">Guardar</v-btn>
+      <v-btn type="submit" color="info">Guardar</v-btn>
     </v-form>
   </v-card>
 </template>

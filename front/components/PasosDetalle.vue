@@ -1,13 +1,13 @@
 <template>
     <v-card class="pa-2">
-        <v-card-title>{{ pasos?.nombre }}</v-card-title>
-        <v-row class="d-flex pa-4">
+        <v-card-title class="detalles">{{ capitalizeFirst(pasos?.nombre) }}</v-card-title>
+        <v-row class="d-flex pa-4 align-center d-flex">
             <v-col cols="1" class="color-square pa-2"
                 :style="{ backgroundColor: '#' + color?.codigoHex + ' !important' }"></v-col>
-            <v-col>{{ color?.nombre }}</v-col>
-            <v-col>{{ pasos?.comentario }}</v-col>
+            <v-col >{{ capitalizeFirst(color?.nombre) }}</v-col>
+            <v-col >{{ capitalizeFirst(pasos?.comentario) }}</v-col>
             <v-col cols="2">
-                <v-btn v-if="pasos" :to="`../modify/paso/${pasos.id}`" color="primary">
+                <v-btn v-if="pasos" :to="`../modify/paso/${pasos.id}`" color="info">
                     <v-icon>mdi-pencil</v-icon>
                 </v-btn>
                 <v-btn @click="deletePaso" color="error">
@@ -58,6 +58,10 @@ export default {
             } catch (error) {
                 console.error('Error deleting paso:', error);
             }
+        },
+        capitalizeFirst(text) {
+            if (!text) return '';
+            return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
         }
     }
 };
@@ -67,7 +71,6 @@ export default {
 .color-square {
     width: 40px;
     height: 40px;
-    display: inline-block;
     margin-left: 10px;
 }
 </style>

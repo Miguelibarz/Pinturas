@@ -3,22 +3,22 @@
     <v-row>
       <v-col cols="2">
         <v-card style="max-width: 100%; height: auto;" class="rounded-lg">
-          <img v-if="modelo && modelo.imagen" :src="`/images/${modelo.imagen}`" alt="Imagen del modelo" 
+          <img v-if="modelo && modelo.imagen" :src="`/images/${modelo.imagen}`" alt="Imagen del modelo"
             style="width: 100%;">
         </v-card>
       </v-col>
-      <v-col cols="7">
+      <v-col cols="7" class="align-center d-flex">
         <v-card-title v-if="modelo" class="text-h2 pa-4">{{ capitalize(modelo.nombre) }} </v-card-title>
       </v-col>
 
-      <v-col cols="3">
-        <v-btn v-if="modelo" :to="`../Add/parte/${modelo.id}`">
+      <v-col cols="3" class="d-flex justify-end align-center pa-6">
+        <v-btn class="ma-1" v-if="modelo" :to="`../Add/parte/${modelo.id}`">
           <v-icon>mdi-plus</v-icon>
         </v-btn>
-        <v-btn v-if="modelo" :to="`../modify/modelo/${modelo.id}`" color="primary">
+        <v-btn class="ma-1" v-if="modelo" :to="`../modify/modelo/${modelo.id}`" color="info">
           <v-icon>mdi-pencil</v-icon>
         </v-btn>
-        <v-btn @click="deleteCurrentModel" color="error">
+        <v-btn class="ma-1" @click="deleteCurrentModel" color="error">
           <v-icon>mdi-delete</v-icon>
         </v-btn>
       </v-col>

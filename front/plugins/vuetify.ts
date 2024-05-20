@@ -37,15 +37,15 @@ export default defineNuxtPlugin(nuxtApp => {
         light: {
           dark: false,
           colors: {
-            primary: '#00395e',
-            secondary: '0d5380',
+            primary: '#363636',
+            secondary: '#363636',
             amarillo: '#eac102',
           }
         },
         dark: {
           dark: true,
           colors: {
-            primary: '#a14372'
+            primary: '#363636'
           }
         }
       }

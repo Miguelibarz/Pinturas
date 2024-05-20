@@ -7,7 +7,8 @@
       <v-checkbox v-model="visibilidad" label="Visible"></v-checkbox>
       <v-textarea v-model="resumen" label="Resumen"></v-textarea>
       <input type="file" ref="fileInput" @change="handleFileChange" accept="image/*" />
-      <v-btn type="submit" color="primary">Guardar</v-btn>
+      <v-divider class="py-2"/>
+      <v-btn type="submit" color="info">Guardar</v-btn>
     </v-form>
   </v-card>
 </template>

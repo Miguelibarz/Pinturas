@@ -6,7 +6,7 @@
       <v-select v-model="Color" :items="colores" item-text="nombre" label="Color" return-object
         :search-input.sync="search" dense />
       <v-textarea v-model="paso.comentario" label="Resumen"></v-textarea>
-      <v-btn type="submit" color="primary">Guardar</v-btn>
+      <v-btn type="submit" color="info">Guardar</v-btn>
     </v-form>
   </v-card>
 </template>

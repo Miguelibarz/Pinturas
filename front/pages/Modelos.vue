@@ -4,8 +4,8 @@
       <v-col cols="10">
         <v-card-title class="text-h4">Lista de Modelos</v-card-title>
       </v-col>
-      <v-col cols="2">
-        <v-btn to="Add/modelo">
+      <v-col cols="2" class="d-flex justify-end align-center pa-6">
+        <v-btn to="Add/modelo" >
           <v-icon>mdi-plus</v-icon>
         </v-btn>
       </v-col>

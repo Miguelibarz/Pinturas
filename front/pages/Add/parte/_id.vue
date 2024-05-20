@@ -4,6 +4,7 @@
         <v-form @submit.prevent="crearParte">
             <v-text-field v-model="nombre" label="Nombre" required></v-text-field>
             <input type="file" ref="fileInput" @change="handleFileChange" accept="image/*" />
+            <v-divider class="py-2"/>
             <v-btn type="submit" color="primary">Guardar</v-btn>
         </v-form>
     </v-card>

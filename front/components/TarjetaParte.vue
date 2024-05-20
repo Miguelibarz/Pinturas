@@ -1,9 +1,10 @@
 <template>
     <v-col cols="4">
         <v-card class="pa-4">
-            <router-link :to="'/partes/' + parte.id">
+            <router-link :to="'/partes/' + parte.id" class="enlace">
                 <img v-if="parte.imagen" :src="`/images/${parte.imagen}`" style="width: 100%;">
-                <v-card-title>{{ capitalize(parte.nombre) }}</v-card-title>
+                <v-card-title class="no-underline pa-0">{{ capitalizeFirst(parte.nombre) }}
+                </v-card-title>
             </router-link>
         </v-card>
     </v-col>
@@ -18,11 +19,21 @@ export default {
         }
     },
     methods: {
-        capitalize(string) {
-            return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
+        capitalizeFirst(text) {
+            if (!text) return '';
+            return text.charAt(0).toUpperCase() + text.slice(1).toLowerCase();
         }
     }
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.enlace {
+    text-decoration: none;
+    color: #fff;
+}
+
+.enlace:hover {
+    color: #dadada
+}
+</style>
