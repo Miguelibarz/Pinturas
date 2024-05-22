@@ -3,10 +3,10 @@
     <h1>Crear Nuevo Modelo</h1>
     <v-form @submit.prevent="crearModelo">
       <v-text-field v-model="nombre" label="Nombre" required></v-text-field>
-      <v-text-field v-model="imprimacion" label="Imprimación"></v-text-field>
+      <v-text-field v-model="imprimacion" label="Imprimación" required></v-text-field>
       <v-checkbox v-model="visibilidad" label="Visible"></v-checkbox>
       <v-textarea v-model="resumen" label="Resumen"></v-textarea>
-      <input type="file" ref="fileInput" @change="handleFileChange" accept="image/*" />
+      <input type="file" ref="fileInput" required @change="handleFileChange" accept="image/*" />
       <v-divider class="py-2"/>
       <v-btn type="submit" color="info">Guardar</v-btn>
     </v-form>
@@ -33,6 +33,14 @@ export default {
       this.imagen = currentDate.getTime() + "-" + this.file.name;
     },
     crearModelo() {
+      if (!this.nombre) {
+        alert('El campo Nombre es obligatorio.');
+        return;
+      }
+      if (!this.file) {
+        alert('Debe seleccionar una imagen.');
+        return;
+      }
       const requestBody = {
         nombre: this.nombre,
         imprimacion: this.imprimacion,

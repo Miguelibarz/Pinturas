@@ -33,6 +33,7 @@ class ModeloBase(BaseModel):
     idUser: int
     imagen: Optional[str] = None
 
+
 class ModeloCreate(ModeloBase):
     pass
 
@@ -48,13 +49,15 @@ class Modelo(ModeloBase):
     class Config:
         orm_mode = True
 
+
 class ModeloCount(BaseModel):
     count: int
+
 
 # Parte schemas
 class ParteBase(BaseModel):
     nombre: str
-    idModelo: int
+    idModelo: Optional[int] = None
     imagen: Optional[str] = None
 
 
@@ -68,10 +71,14 @@ class ParteUpdate(ParteBase):
 
 class Parte(ParteBase):
     id: int
-    idModelo: int
+    idModelo: Optional[int] = None
 
     class Config:
         orm_mode = True
+
+
+class ParteCount(BaseModel):
+    count: int
 
 
 # Paso schemas
@@ -80,6 +87,7 @@ class PasoBase(BaseModel):
     idColor: int
     idParte: int
     comentario: Optional[str] = None
+
 
 class PasoCreate(PasoBase):
     pass

@@ -3,8 +3,6 @@
       <h1 v-if="parte" >Modificar parte: {{ parte.nombre }}</h1>
       <v-form @submit.prevent="actualizarparte" v-if="parte">
         <v-text-field v-model="parte.nombre" label="Nombre" required></v-text-field>
-        <input type="file" ref="fileInput" @change="handleFileChange" accept="image/*" />
-
         <v-btn type="submit" color="info">Guardar</v-btn>
       </v-form>
     </v-card>

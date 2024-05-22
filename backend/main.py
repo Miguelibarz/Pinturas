@@ -21,6 +21,8 @@ app.add_middleware(
     allow_methods=["GET", "POST", "PUT", "DELETE"],
     allow_headers=["*"],
 )
+
+
 # Dependency
 def get_db():
     db = SessionLocal()
@@ -45,21 +47,27 @@ tags_metadata = [
 def create_modelo(modelo: schemas.ModeloCreate, db: Session = Depends(get_db)):
     return crud.create_modelo(db=db, modelo_create=modelo)
 
+
 @app.get("/modelos/count", response_model=schemas.ModeloCount, tags=["Modelos"])
 def count_modelos(db: Session = Depends(get_db)):
     count = crud.count_modelos(db)
     return {"count": count}
 
-#SHOW ALL MODELOS
-#@app.get("/modelos/", response_model=List[schemas.Modelo], tags=["Modelos"])
-#def read_modelos(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+
+# SHOW ALL MODELOS
+# @app.get("/modelos/", response_model=List[schemas.Modelo], tags=["Modelos"])
+# def read_modelos(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
 #    modelos = crud.get_modelos(db, skip=skip, limit=limit)
 #    return modelos
 
+
 @app.get("/modelos/", response_model=List[schemas.Modelo], tags=["Modelos"])
-def read_modelos_visible(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+def read_modelos_visible(
+    skip: int = 0, limit: int = 100, db: Session = Depends(get_db)
+):
     modelos = crud.get_modelos_visible(db, skip=skip, limit=limit)
     return modelos
+
 
 @app.get("/modelos/{modelo_id}", response_model=schemas.Modelo, tags=["Modelos"])
 def read_modelo(modelo_id: int, db: Session = Depends(get_db)):
@@ -68,16 +76,23 @@ def read_modelo(modelo_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Modelo not found")
     return db_modelo
 
+
 @app.put("/modelos/{modelo_id}", response_model=schemas.Modelo, tags=["Modelos"])
-def update_modelo(modelo_id: int, modelo_update: schemas.ModeloUpdate, db: Session = Depends(get_db)):
+def update_modelo(
+    modelo_id: int, modelo_update: schemas.ModeloUpdate, db: Session = Depends(get_db)
+):
     db_modelo = crud.get_modelo(db, modelo_id=modelo_id)
     if db_modelo is None:
         raise HTTPException(status_code=404, detail="Modelo not found")
-    return crud.update_modelo(db=db, modelo_id=modelo_id, modelo_update=modelo_update, db_model=models.Modelo)
+    return crud.update_modelo(
+        db=db, modelo_id=modelo_id, modelo_update=modelo_update, db_model=models.Modelo
+    )
+
 
 @app.delete("/modelos/{modelo_id}", response_model=schemas.Modelo, tags=["Modelos"])
 def delete_modelo(modelo_id: int, db: Session = Depends(get_db)):
     return crud.delete_modelo(db=db, modelo_id=modelo_id)
+
 
 # PARTES operations
 @app.post("/partes/", response_model=schemas.Parte, tags=["Partes"])
@@ -85,10 +100,25 @@ def create_parte(parte: schemas.ParteCreate, db: Session = Depends(get_db)):
     return crud.create_parte(db=db, parte_create=parte)
 
 
+@app.get("/partes/", response_model=List[schemas.Parte], tags=["Partes"])
+def read_partes(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    partes = db.query(models.Parte).offset(skip).limit(limit).all()
+    return partes
+
+
+@app.get("/partes/count", response_model=schemas.ParteCount, tags=["Partes"])
+def count_partes(db: Session = Depends(get_db)):
+    count = crud.count_partes(db)
+    return {"count": count}
+
+
 @app.get("/getPartes/{id_modelo}", response_model=List[schemas.Parte], tags=["Partes"])
-def read_partes_by_IDModelo(id_modelo: int, skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+def read_partes_by_IDModelo(
+    id_modelo: int, skip: int = 0, limit: int = 100, db: Session = Depends(get_db)
+):
     partes = crud.get_partes_by_id_modelo(db, id_modelo, skip=skip, limit=limit)
     return partes
+
 
 @app.get("/partes/{parte_id}", response_model=schemas.Parte, tags=["Partes"])
 def read_parte(parte_id: int, db: Session = Depends(get_db)):
@@ -97,27 +127,37 @@ def read_parte(parte_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Parte not found")
     return db_parte
 
+
 @app.put("/partes/{parte_id}", response_model=schemas.Parte, tags=["Partes"])
-def update_parte(parte_id: int, parte_update: schemas.ParteUpdate, db: Session = Depends(get_db)):
+def update_parte(
+    parte_id: int, parte_update: schemas.ParteUpdate, db: Session = Depends(get_db)
+):
     db_parte = crud.get_parte(db, parte_id=parte_id)
     if db_parte is None:
         raise HTTPException(status_code=404, detail="Parte not found")
-    return crud.update_parte(db=db, parte_id=parte_id, parte_update=parte_update, db_parte=models.Parte)
+    return crud.update_parte(
+        db=db, parte_id=parte_id, parte_update=parte_update, db_parte=models.Parte
+    )
 
 
 @app.delete("/partes/{parte_id}", response_model=schemas.Parte, tags=["Partes"])
 def delete_parte(parte_id: int, db: Session = Depends(get_db)):
     return crud.delete_parte(db=db, parte_id=parte_id)
 
+
 # PASOS operations
 @app.post("/pasos/", response_model=schemas.Paso, tags=["Pasos"])
 def create_paso(paso: schemas.PasoCreate, db: Session = Depends(get_db)):
     return crud.create_paso(db=db, paso_create=paso)
 
+
 @app.get("/getPasos/{id_parte}", response_model=List[schemas.Paso], tags=["Pasos"])
-def read_pasos_by_IDPartes(id_parte: int, skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+def read_pasos_by_IDPartes(
+    id_parte: int, skip: int = 0, limit: int = 100, db: Session = Depends(get_db)
+):
     pasos = crud.get_pasos_by_id_partes(db, id_parte, skip=skip, limit=limit)
     return pasos
+
 
 @app.get("/pasos/", response_model=List[schemas.Paso], tags=["Pasos"])
 def read_pasos(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
@@ -132,16 +172,22 @@ def read_paso(paso_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="Paso not found")
     return db_paso
 
+
 @app.delete("/pasos/{paso_id}", response_model=schemas.Parte, tags=["Pasos"])
 def delete_paso(paso_id: int, db: Session = Depends(get_db)):
     return crud.delete_paso(db=db, paso_id=paso_id)
 
+
 @app.put("/pasos/{paso_id}", response_model=schemas.Paso, tags=["Pasos"])
-def update_paso(paso_id: int, paso_update: schemas.PasoUpdate, db: Session = Depends(get_db)):
+def update_paso(
+    paso_id: int, paso_update: schemas.PasoUpdate, db: Session = Depends(get_db)
+):
     db_paso = crud.get_paso(db, paso_id=paso_id)
     if db_paso is None:
         raise HTTPException(status_code=404, detail="Paso not found")
-    return crud.update_paso(db=db, paso_id=paso_id, paso_update=paso_update, db_paso=models.Paso)
+    return crud.update_paso(
+        db=db, paso_id=paso_id, paso_update=paso_update, db_paso=models.Paso
+    )
 
 
 # USERS operations
@@ -209,20 +255,22 @@ def update_color(
     # Devolver el color actualizado
     return db_color
 
+
 @app.delete("/colores/{color_id}", response_model=schemas.Color, tags=["Colores"])
 def delete_color(color_id: int, db: Session = Depends(get_db)):
     # Verificar si el color existe en la base de datos
     db_color = crud.get_color(db, color_id)
     if db_color is None:
         raise HTTPException(status_code=404, detail="Color not found")
-    
+
     # Eliminar el color de la base de datos
     crud.delete_color(db, color_id=color_id)
-    
+
     # Devolver el color eliminado
     return db_color
 
-#IMAGEN
+
+# IMAGEN
 @app.post("/upload/", tags=["Imagen"])
 async def upload_image(file: UploadFile = File(...)):
     try:
@@ -234,6 +282,10 @@ async def upload_image(file: UploadFile = File(...)):
         with open(f"front/static/images/{file.filename}", "wb") as buffer:
             shutil.copyfileobj(file.file, buffer)
 
-        return JSONResponse(status_code=200, content={"message": "Imagen subida correctamente"})
+        return JSONResponse(
+            status_code=200, content={"message": "Imagen subida correctamente"}
+        )
     except Exception as e:
-        return JSONResponse(status_code=500, content={"message": f"Error al subir la imagen: {e}"})
+        return JSONResponse(
+            status_code=500, content={"message": f"Error al subir la imagen: {e}"}
+        )

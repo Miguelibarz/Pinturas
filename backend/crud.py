@@ -176,6 +176,9 @@ def get_pasos_by_id_partes(
         .all()
     )
 
+def count_partes(db: Session) -> int:
+    return db.query(models.Parte).filter(models.Parte.idModelo.isnot(None)).count()
+#fix revisar
 
 def get_pasos(db: Session, skip: int = 0, limit: int = 100):
     return db.query(models.Paso).offset(skip).limit(limit).all()

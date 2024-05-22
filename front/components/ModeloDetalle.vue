@@ -1,22 +1,22 @@
 <template>
   <v-col cols="6">
-        <v-card class="pa-4 tarjeta-modelos" >
+    <v-card class="pa-4 tarjeta-modelos">
 
-        <router-link :to="'/modelos/' + modelo.id" class="enlace">
-          <div style="max-width: 100%; height: auto;">
-            <img v-if="modelo && modelo.imagen" :src="`/images/${modelo.imagen}`" style="width: 100%;">
-          </div>
-          <div class="modelo-detalle">
-            <h2>{{ capitalizeFirst(modelo.nombre) }}</h2>
-            <p>Resumen: {{ capitalizeFirst(modelo.resumen) }}</p>
-            <p>Creador:
-              <router-link :to="'/users/' + creador.id">
+      <router-link :to="'/modelos/' + modelo.id" class="enlace">
+        <div style="max-width: 100%; height: auto;">
+          <img v-if="modelo && modelo.imagen" :src="`/images/${modelo.imagen}`" style="width: 100%;">
+        </div>
+        <div class="modelo-detalle">
+          <h2>{{ capitalizeFirst(modelo.nombre) }}</h2>
+          <p>Resumen: {{ capitalizeFirst(modelo.resumen) }}</p>
+          <p>Creador:
+              <!--<router-link :to="'/users/' + creador.id">-->
                 {{ creador.alias }}
-              </router-link>
+              <!--</router-link>-->
             </p>
-          </div>
-        </router-link>
-      </v-card>
+        </div>
+      </router-link>
+    </v-card>
   </v-col>
 </template>
 
@@ -72,10 +72,12 @@ export default {
 .enlace:hover {
   color: #dadada
 }
-.tarjeta-modelos:hover{
+
+.tarjeta-modelos:hover {
   background-color: #dadada;
   transform: scale(1.05);
 }
+
 .tarjeta-modelos {
   transition: transform 0.3s ease;
 }

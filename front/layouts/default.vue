@@ -49,15 +49,20 @@ export default {
       drawer: false,
       fixed: false,
       items: [
-        {
-          icon: 'mdi-home-outline',
-          title: 'Home',
-          to: '/'
-        },
+        //{
+        //  icon: 'mdi-home-outline',
+        //  title: 'Home',
+        //  to: '/'
+        //},
         {
           icon: 'mdi-palette-swatch-outline',
           title: 'Modelos',
           to: '/modelos'
+        },
+        {
+          icon: 'mdi-treasure-chest-outline',
+          title: 'Partes',
+          to: '/partes'
         },
         {
           icon: 'mdi-format-color-fill',

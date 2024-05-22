@@ -11,11 +11,12 @@
         <v-card-title v-if="modelo" class="text-h2 pa-4">{{ capitalize(modelo.nombre) }} </v-card-title>
       </v-col>
 
-      <v-col cols="3" class="d-flex justify-end align-center pa-6">
-        <v-btn class="ma-1" v-if="modelo" :to="`../Add/parte/${modelo.id}`">
+      <v-col cols="3" class="d-flex justify-end align-center pa-6" v-if="modelo">
+        <v-btn :to="'/Modelos'" color="primary"> <v-icon>mdi-arrow-left</v-icon></v-btn>
+        <v-btn class="ma-1" :to="`../Add/parte/${modelo.id}`">
           <v-icon>mdi-plus</v-icon>
         </v-btn>
-        <v-btn class="ma-1" v-if="modelo" :to="`../modify/modelo/${modelo.id}`" color="info">
+        <v-btn class="ma-1" :to="`../modify/modelo/${modelo.id}`" color="info">
           <v-icon>mdi-pencil</v-icon>
         </v-btn>
         <v-btn class="ma-1" @click="deleteCurrentModel" color="error">
@@ -23,6 +24,11 @@
         </v-btn>
       </v-col>
     </v-row>
+    <v-divider class="border-opacity-75 pa-4"></v-divider>
+
+    <v-card-text class="pa-4" v-if="modelo">
+      {{ capitalize(modelo.resumen) }}
+    </v-card-text>
     <v-divider class="border-opacity-75 pa-4"></v-divider>
     <v-card-text class="pa-4 text-h5">Partes:</v-card-text>
     <v-container class="d-flex">
