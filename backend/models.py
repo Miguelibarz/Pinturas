@@ -59,3 +59,4 @@ class Color(Base):
     id = Column(Integer, primary_key=True)
     nombre = Column(String, index=True)
     codigoHex = Column(String, index=True)
+    marca = Column(String, index=True)

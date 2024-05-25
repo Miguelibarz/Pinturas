@@ -9,6 +9,7 @@
           <span>{{ item.nombre }}</span>
         </template>
       </v-select>
+      <v-col cols="1" class="color-square pa-2" :style="{ backgroundColor: Color?.codigoHex + ' !important' }"></v-col>
       <v-text-field v-model="comentario" label="Comentario"></v-text-field>
       <v-btn type="submit" color="info">Guardar</v-btn>
       <v-btn @click="navigateToPartes" color="error">Cancelar</v-btn>

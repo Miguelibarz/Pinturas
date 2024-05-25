@@ -1,12 +1,13 @@
 <template>
   <v-col cols="6">
     <v-card class="pa-4 d-flex">
-      <v-col cols="4" class="color-square pa-2" :style="{ backgroundColor: '#' + color?.codigoHex + ' !important' }">
+      <v-col cols="4" class="color-square pa-2" :style="{ backgroundColor: color?.codigoHex + ' !important' }">
       </v-col>
       <v-col cols="8" class="color-detalle">
         <h2>{{ color.nombre }}</h2>
         <p>ID: {{ color.id }}</p>
         <p>Codigo HEX: {{ color.codigoHex }}</p>
+        <p>Marca: {{ color.marca }}</p>
 
         <v-btn color="red" @click="eliminarColor">Eliminar</v-btn>
       </v-col>

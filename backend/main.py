@@ -1,3 +1,4 @@
+import json
 import os
 import shutil
 from fastapi import Depends, FastAPI, File, HTTPException, UploadFile
@@ -39,6 +40,7 @@ tags_metadata = [
     {"name": "Users", "description": "APIs for users"},
     {"name": "Colores", "description": "APIs for colores"},
     {"name": "Imagen", "description": "APIs for imagen"},
+    {"name": "API", "description": "importaciones API colores"},
 ]
 
 
@@ -222,8 +224,8 @@ def create_color(color: schemas.ColorCreate, db: Session = Depends(get_db)):
 
 
 @app.get("/colores/", response_model=List[schemas.Color], tags=["Colores"])
-def read_colores(skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
-    colores = crud.get_colores(db, skip=skip, limit=limit)
+def read_colores(db: Session = Depends(get_db)):
+    colores = crud.get_colores(db)
     return colores
 
 
@@ -268,6 +270,43 @@ def delete_color(color_id: int, db: Session = Depends(get_db)):
 
     # Devolver el color eliminado
     return db_color
+
+
+@app.post("/import-colores/", tags=["Colores"])
+def import_colores_from_json(db: Session = Depends(get_db)):
+    try:
+        file_path = os.path.join("front/static/", "paints.json")  # Ruta del archivo de pinturas
+        if not os.path.exists(file_path):
+            return JSONResponse(
+                status_code=404, content={"message": "paints.json no encontrado"}
+            )
+
+        with open(file_path, "r") as file:
+            data = json.load(file)
+            
+        # Normalizar los nombres de los campos y eliminar el atributo "tipo"
+        for color_data in data:
+            color_data["nombre"] = color_data.pop("Nombre", None)
+            color_data["marca"] = color_data.pop("Marca", None)
+            color_data["codigoHex"] = color_data.pop("Hex", None)
+            color_data.pop("Tipo", None)
+
+        # Crear los objetos ColorCreate y guardarlos en la base de datos si no existen
+        for color_data in data:
+            existing_color = crud.get_color_by_name(db, nombre=color_data["nombre"])
+            if existing_color:
+                print(f"Color '{color_data['nombre']}' ya existe. Saltando.")
+                continue
+            color = schemas.ColorCreate(**color_data)
+            crud.create_color(db=db, color=color)
+
+        return JSONResponse(
+            status_code=200, content={"message": "Datos de colores importados correctamente"}
+        )
+    except Exception as e:
+        return JSONResponse(
+            status_code=500, content={"message": f"Error al importar datos de colores: {e}"}
+        )
 
 
 # IMAGEN

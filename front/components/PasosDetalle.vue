@@ -3,7 +3,7 @@
         <v-card-title class="detalles">{{ capitalizeFirst(pasos?.nombre) }}</v-card-title>
         <v-row class="d-flex pa-4 align-center d-flex">
             <v-col cols="1" class="color-square pa-2"
-                :style="{ backgroundColor: '#' + color?.codigoHex + ' !important' }"></v-col>
+                :style="{ backgroundColor: color?.codigoHex + ' !important' }"></v-col>
             <v-col >{{ capitalizeFirst(color?.nombre) }}</v-col>
             <v-col >{{ capitalizeFirst(pasos?.comentario) }}</v-col>
             <v-col cols="2">

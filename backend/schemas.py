@@ -111,6 +111,7 @@ class Paso(PasoBase):
 class ColorBase(BaseModel):
     nombre: str
     codigoHex: str
+    marca: str
 
 
 class ColorCreate(ColorBase):

@@ -230,8 +230,8 @@ def get_color(db: Session, color_id: int):
     return db.query(models.Color).filter(models.Color.id == color_id).first()
 
 
-def get_colores(db: Session, skip: int = 0, limit: int = 100):
-    return db.query(models.Color).offset(skip).limit(limit).all()
+def get_colores(db: Session):
+    return db.query(models.Color).all()
 
 
 def create_color(db: Session, color: schemas.ColorCreate):
@@ -260,3 +260,6 @@ def delete_color(db: Session, color_id: int):
         db.commit()
     else:
         raise ValueError("Color not found")
+    
+def get_color_by_name(db: Session, nombre: str):
+    return db.query(models.Color).filter(models.Color.nombre == nombre).first()

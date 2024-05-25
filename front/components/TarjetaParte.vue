@@ -70,7 +70,7 @@ export default {
 }
 .enlace.enlace-modelo:hover{
     font-size: 20px;
-    color: #b9e9ff;
-    transition: font-size 0.2s;
+    color: #48bef5;
+    transition: font-size 0.5s,  color 0.5s;
 }
 </style>

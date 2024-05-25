@@ -1,26 +1,27 @@
-// plugins/vuetify.js
-import '@/assets/main.scss'
-import '@/assets/settings.scss'
+// plugins/vuetify.ts
+import '@/assets/main.scss';
+import '@/assets/settings.scss';
 
-import { IconProps, IconSet, createVuetify } from 'vuetify'
-import { mdi } from 'vuetify/iconsets/mdi'
-import * as components from 'vuetify/components'
-import * as directives from 'vuetify/directives'
+import { defineNuxtPlugin } from '#app';
+import { IconProps, IconSet, createVuetify } from 'vuetify';
+import { mdi } from 'vuetify/iconsets/mdi';
+import * as components from 'vuetify/components';
+import * as directives from 'vuetify/directives';
+import customIcons from '@/utils/customIcons';
+import { h } from 'vue';
 
-import customIcons from '@/utils/customIcons'
-
-const inputsProps =  {
+const inputsProps = {
   variant: 'filled',
   rounded: 'lg',
   hideDetails: 'auto'
-}
+};
 
 const custom: IconSet = {
   component: (props: IconProps) => 
     h(props.tag, [h(customIcons[props.icon as string], { class: 'v-icon__svg' })])
-}
+};
 
-export default defineNuxtPlugin(nuxtApp => {
+export default defineNuxtPlugin((nuxtApp: any) => {
   const vuetify = createVuetify({
     ssr: true,
     components,
@@ -51,7 +52,6 @@ export default defineNuxtPlugin(nuxtApp => {
       }
     },
     defaults: {
-
       VTextField: inputsProps,
       VSelect: inputsProps,
       VAutocomplete: inputsProps,
@@ -64,17 +64,14 @@ export default defineNuxtPlugin(nuxtApp => {
       VAlert: {
         variant: 'tonal'
       },
-
       VBtn: {
         rounded: 'lg'
       },
-
       VList: {
         color: 'primary'
       },
-      
     }
-  })
+  });
 
-  nuxtApp.vueApp.use(vuetify)
-})
+  nuxtApp.vueApp.use(vuetify);
+});

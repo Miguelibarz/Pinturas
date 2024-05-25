@@ -1,0 +1,2223 @@
+[
+    {
+        "Nombre": "Ceramite White",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#ffffff"
+    },
+    {
+        "Nombre": "Dead White",
+        "Marca": "Vallejo",
+        "Tipo": "Game",
+        "Hex": "#ffffff"
+    },
+    {
+        "Nombre": "White",
+        "Marca": "Vallejo",
+        "Tipo": "Model",
+        "Hex": "#ffffff"
+    },
+    {
+        "Nombre": "Morrow White",
+        "Marca": "P3 Formula",
+        "Tipo": "Base Layer",
+        "Hex": "#FEFBFD"
+    },
+    {
+        "Nombre": "Matt White",
+        "Marca": "Army Painter",
+        "Tipo": "Base Layer",
+        "Hex": "#ffffff"
+    },
+    {
+        "Nombre": "White Scar",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#FFFFFF"
+    },
+    {
+        "Nombre": "Averland Sunset",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#fbba00"
+    },
+    {
+        "Nombre": "Gold Yellow",
+        "Marca": "Vallejo",
+        "Tipo": "Game",
+        "Hex": "#fdb318"
+    },
+    {
+        "Nombre": "Golden Yellow",
+        "Marca": "Vallejo",
+        "Tipo": "Model",
+        "Hex": "#f7c65e"
+    },
+    {
+        "Nombre": "Heartfire",
+        "Marca": "P3 Formula",
+        "Tipo": "Base Layer",
+        "Hex": "#f6b046"
+    },
+    {
+        "Nombre": "Phoenix Flames",
+        "Marca": "Army Painter",
+        "Tipo": "Base Layer",
+        "Hex": "#faa61a"
+    },
+    {
+        "Nombre": "Yriel Yellow",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#ffda00"
+    },
+    {
+        "Nombre": "Sun Yellow",
+        "Marca": "Vallejo",
+        "Tipo": "Game",
+        "Hex": "#ffcf07"
+    },
+    {
+        "Nombre": "Deep Yellow",
+        "Marca": "Vallejo",
+        "Tipo": "Model",
+        "Hex": "#ffe30c"
+    },
+    {
+        "Nombre": "Sulfuric Yellow",
+        "Marca": "P3 Formula",
+        "Tipo": "Base Layer",
+        "Hex": "#f0d233"
+    },
+    {
+        "Nombre": "Daemonic Yellow",
+        "Marca": "Army Painter",
+        "Tipo": "Base Layer",
+        "Hex": "#fada06"
+    },
+    {
+        "Nombre": "Flash Gitz Yellow",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#ffee00"
+    },
+    {
+        "Nombre": "Moon Yellow",
+        "Marca": "Vallejo",
+        "Tipo": "Game",
+        "Hex": "#fff103"
+    },
+    {
+        "Nombre": "Lemon Yellow",
+        "Marca": "Vallejo",
+        "Tipo": "Model",
+        "Hex": "#fef10e"
+    },
+    {
+        "Nombre": "Cygnus Yellow",
+        "Marca": "P3 Formula",
+        "Tipo": "Base Layer",
+        "Hex": "#f3e72e"
+    },
+    {
+        "Nombre": "Babe Blonde",
+        "Marca": "Army Painter",
+        "Tipo": "Base Layer",
+        "Hex": "#f8dd0d"
+    },
+    {
+        "Nombre": "Jokaero Orange",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#e6200f"
+    },
+    {
+        "Nombre": "Hot Orange",
+        "Marca": "Vallejo",
+        "Tipo": "Game",
+        "Hex": "#e43027"
+    },
+    {
+        "Nombre": "Scarlet",
+        "Marca": "Vallejo",
+        "Tipo": "Model",
+        "Hex": "#da3630"
+    },
+    {
+        "Nombre": "Khador Red Base",
+        "Marca": "P3 Formula",
+        "Tipo": "Base Layer",
+        "Hex": "#ee2824"
+    },
+    {
+        "Nombre": "Mythical Orange",
+        "Marca": "Army Painter",
+        "Tipo": "Base Layer",
+        "Hex": "#e73d24"
+    },
+    {
+        "Nombre": "Troll Slayer Orange",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#eb641b"
+    },
+    {
+        "Nombre": "Orange Fire",
+        "Marca": "Vallejo",
+        "Tipo": "Game",
+        "Hex": "#f1652e"
+    },
+    {
+        "Nombre": "Bright Orange",
+        "Marca": "Vallejo",
+        "Tipo": "Model",
+        "Hex": "#f26833"
+    },
+    {
+        "Nombre": "Khardic Flesh",
+        "Marca": "P3 Formula",
+        "Tipo": "Base Layer",
+        "Hex": "#cb7b5b"
+    },
+    {
+        "Nombre": "Fire Lizard",
+        "Marca": "Army Painter",
+        "Tipo": "Base Layer",
+        "Hex": "#d67128"
+    },
+    {
+        "Nombre": "Fire Dragon Bright",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#f1844a"
+    },
+    {
+        "Nombre": "Bronze Fleshtone",
+        "Marca": "Vallejo",
+        "Tipo": "Game",
+        "Hex": "#db945c"
+    },
+    {
+        "Nombre": "Light Orange",
+        "Marca": "Vallejo",
+        "Tipo": "Model",
+        "Hex": "#f68627"
+    },
+    {
+        "Nombre": "Khador Red Highlight",
+        "Marca": "P3 Formula",
+        "Tipo": "Base Layer",
+        "Hex": "#f29042"
+    },
+    {
+        "Nombre": "Barbarian Flesh",
+        "Marca": "Army Painter",
+        "Tipo": "Base Layer",
+        "Hex": "#e89c6c"
+    },
+    {
+        "Nombre": "Mephiston Red",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#9b0e05"
+    },
+    {
+        "Nombre": "Gory Red",
+        "Marca": "Vallejo",
+        "Tipo": "Game",
+        "Hex": "#810504"
+    },
+    {
+        "Nombre": "Flat Red",
+        "Marca": "Vallejo",
+        "Tipo": "Model",
+        "Hex": "#aa3037"
+    },
+    {
+        "Nombre": "Skorne Red",
+        "Marca": "P3 Formula",
+        "Tipo": "Base Layer",
+        "Hex": "#b01f24"
+    },
+    {
+        "Nombre": "Dragon Red",
+        "Marca": "Army Painter",
+        "Tipo": "Base Layer",
+        "Hex": "#9a1b1e"
+    },
+    {
+        "Nombre": "Evil Suns Scarlet",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#c00b0c"
+    },
+    {
+        "Nombre": "Bloody Red",
+        "Marca": "Vallejo",
+        "Tipo": "Game",
+        "Hex": "#bf282e"
+    },
+    {
+        "Nombre": "Carmine Red",
+        "Marca": "Vallejo",
+        "Tipo": "Model",
+        "Hex": "#b73035"
+    },
+    {
+        "Nombre": "Skorne Red",
+        "Marca": "P3 Formula",
+        "Tipo": "Base Layer",
+        "Hex": "#b01f24"
+    },
+    {
+        "Nombre": "Pure Red",
+        "Marca": "Army Painter",
+        "Tipo": "Base Layer",
+        "Hex": "#cf2127"
+    },
+    {
+        "Nombre": "Wild Rider Red",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#e21516"
+    },
+    {
+        "Nombre": "Hot Orange",
+        "Marca": "Vallejo",
+        "Tipo": "Game",
+        "Hex": "#e43027"
+    },
+    {
+        "Nombre": "Scarlet",
+        "Marca": "Vallejo",
+        "Tipo": "Model",
+        "Hex": "#da3630"
+    },
+    {
+        "Nombre": "Khador Red Base",
+        "Marca": "P3 Formula",
+        "Tipo": "Base Layer",
+        "Hex": "#ee2824"
+    },
+    {
+        "Nombre": "Pure Red",
+        "Marca": "Army Painter",
+        "Tipo": "Base Layer",
+        "Hex": "#cf2127"
+    },
+    {
+        "Nombre": "Khorne Red",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#6a0a01"
+    },
+    {
+        "Nombre": "Terracota",
+        "Marca": "Vallejo",
+        "Tipo": "Game",
+        "Hex": "#6b1306"
+    },
+    {
+        "Nombre": "Red",
+        "Marca": "Vallejo",
+        "Tipo": "Model",
+        "Hex": "#841a1d"
+    },
+    {
+        "Nombre": "Sanguine Base",
+        "Marca": "P3 Formula",
+        "Tipo": "Base Layer",
+        "Hex": "#771b1d"
+    },
+    {
+        "Nombre": "Chaotic Red",
+        "Marca": "Army Painter",
+        "Tipo": "Base Layer",
+        "Hex": "#7c0a0c"
+    },
+    {
+        "Nombre": "Wazdakka Red",
+        "Marca": "Citadel",
+        "Tipo": "Base Layer",
+        "Hex": "#7e0704"
+    },
+    {
+        "Nombre": "Warlord Purple",
+        "Marca": "Vallejo",
+        "Tipo": "Game",
+        "Hex": "#5e143b"
+    },
+    {
+        "Nombre": "Red",
+        "Marca": "Vallejo",
+        "Tipo": "Model",
+        "Hex": "#841a1d"
+    },
+    {
+        "Nombre": "Sanguine Base",
+        "Marca": "P3 Formula",
+        "Tipo": "Base Layer",
+        "Hex": "#771b1d"
+    },
+    {
+        "Nombre": "Chaotic Red",
+        "Marca": "Army Painter",
+        "Tipo": "Base Layer",
+        "Hex": "#7c0a0c"
+    },
+    {
+        "Nombre": "Wazdakka Red",
+        "Marca": "Citadel",
+        "Hex": "#8d0d01"
+    },
+    {
+        "Nombre": "Gory Red",
+        "Marca": "Vallejo",
+        "Hex": "#810504"
+    },
+    {
+        "Nombre": "German Cam. Medium Brown",
+        "Marca": "Vallejo",
+        "Hex": "#722b2f"
+    },
+    {
+        "Nombre": "Sanguine Base",
+        "Marca": "P3 Formula",
+        "Hex": "#6c160f"
+    },
+    {
+        "Nombre": "Dragon Red",
+        "Marca": "Army Painter",
+        "Hex": "#9a1b1e"
+    },
+    {
+        "Nombre": "Squig Orange",
+        "Marca": "Citadel",
+        "Hex": "#b04d3e"
+    },
+    {
+        "Nombre": "Tan",
+        "Marca": "Vallejo",
+        "Hex": "#9f4746"
+    },
+    {
+        "Nombre": "Dark Red",
+        "Marca": "Vallejo",
+        "Hex": "#a24a46"
+    },
+    {
+        "Nombre": "Bloodstone",
+        "Marca": "P3 Formula",
+        "Hex": "#9e4822"
+    },
+    {
+        "Nombre": "Mars Red",
+        "Marca": "Army Painter",
+        "Hex": "#b73b37"
+    },
+    {
+        "Nombre": "Screamer Pink",
+        "Marca": "Citadel",
+        "Hex": "#831740"
+    },
+    {
+        "Nombre": "Warlord Purple",
+        "Marca": "Vallejo",
+        "Hex": "#7d1a44"
+    },
+    {
+        "Nombre": "Violet Red",
+        "Marca": "Vallejo",
+        "Hex": "#6b2946"
+    },
+    {
+        "Nombre": "Murderous Magenta",
+        "Marca": "P3 Formula",
+        "Hex": "#a81f5e"
+    },
+    {
+        "Nombre": "Vampire Red",
+        "Marca": "Army Painter",
+        "Hex": "#981d34"
+    },
+    {
+        "Nombre": "Pink Horror",
+        "Marca": "Citadel",
+        "Hex": "#96325c"
+    },
+    {
+        "Nombre": "Magenta",
+        "Marca": "Vallejo",
+        "Hex": "#a92a56"
+    },
+    {
+        "Nombre": "Wasteland Soil",
+        "Marca": "Army Painter",
+        "Hex": "#774b58"
+    },
+    {
+        "Nombre": "Emperors Children",
+        "Marca": "Citadel",
+        "Hex": "#bd3f75"
+    },
+    {
+        "Nombre": "Sunset Red",
+        "Marca": "Vallejo",
+        "Hex": "#c22c5f"
+    },
+    {
+        "Nombre": "Orc Blood",
+        "Marca": "Army Painter",
+        "Hex": "#925f6e"
+    },
+    {
+        "Nombre": "Naggaroth Night",
+        "Marca": "Citadel",
+        "Hex": "#433656"
+    },
+    {
+        "Nombre": "Hexed Lichen",
+        "Marca": "Vallejo",
+        "Hex": "#34274d"
+    },
+    {
+        "Nombre": "Violet",
+        "Marca": "Vallejo",
+        "Hex": "#4b2f65"
+    },
+    {
+        "Nombre": "Exile Blue",
+        "Marca": "P3 Formula",
+        "Hex": "#203367"
+    },
+    {
+        "Nombre": "Deep Blue",
+        "Marca": "Army Painter",
+        "Hex": "#083251"
+    },
+    {
+        "Nombre": "Xereus Purple",
+        "Marca": "Citadel",
+        "Hex": "#4b205c"
+    },
+    {
+        "Nombre": "Heavy Violet",
+        "Marca": "Vallejo",
+        "Hex": "#4c2e65"
+    },
+    {
+        "Nombre": "Royal Purple",
+        "Marca": "Vallejo",
+        "Hex": "#4b2967"
+    },
+    {
+        "Nombre": "Beaten Purple",
+        "Marca": "P3 Formula",
+        "Hex": "#552a72"
+    },
+    {
+        "Nombre": "Alien Purple",
+        "Marca": "Army Painter",
+        "Hex": "#50317b"
+    },
+    {
+        "Nombre": "Genestealer Purple",
+        "Marca": "Citadel",
+        "Hex": "#7c5ca4"
+    },
+    {
+        "Nombre": "Sombre Grey",
+        "Marca": "Vallejo",
+        "Hex": "#4c5c7d"
+    },
+    {
+        "Nombre": "Blue Violet",
+        "Marca": "Vallejo",
+        "Hex": "#795c9a"
+    },
+    {
+        "Nombre": "Cygnar Base Blue",
+        "Marca": "P3 Formula",
+        "Hex": "#124b9b"
+    },
+    {
+        "Nombre": "Dungeon Grey",
+        "Marca": "Army Painter",
+        "Hex": "#686c71"
+    },
+    {
+        "Nombre": "Daemonette Hide",
+        "Marca": "Citadel",
+        "Hex": "#696685"
+    },
+    {
+        "Nombre": "Azure",
+        "Marca": "Vallejo",
+        "Hex": "#717cad"
+    },
+    {
+        "Nombre": "Greatcoat Grey",
+        "Marca": "P3 Formula",
+        "Hex": "#4d5861"
+    },
+    {
+        "Nombre": "Warpfiend Grey",
+        "Marca": "Citadel",
+        "Hex": "#6B6A74"
+    },
+    {
+        "Nombre": "Cold Grey",
+        "Marca": "Vallejo",
+        "Hex": "#54646d"
+    },
+    {
+        "Nombre": "Grey Green",
+        "Marca": "Vallejo",
+        "Hex": "#565a60"
+    },
+    {
+        "Nombre": "Slaanesh Grey",
+        "Marca": "Citadel",
+        "Hex": "#8E8C97"
+    },
+    {
+        "Nombre": "Stonewall Grey",
+        "Marca": "Vallejo",
+        "Hex": "#828e95"
+    },
+    {
+        "Nombre": "Medium Sea Grey",
+        "Marca": "Vallejo",
+        "Hex": "#869393"
+    },
+    {
+        "Nombre": "Ironhull Grey",
+        "Marca": "P3 Formula",
+        "Hex": "#8e969b"
+    },
+    {
+        "Nombre": "Ash Grey",
+        "Marca": "Army Painter",
+        "Hex": "#a2a5a4"
+    },
+    {
+        "Nombre": "Kantor Blue",
+        "Marca": "Citadel",
+        "Hex": "#06234f"
+    },
+    {
+        "Nombre": "Royal Purple",
+        "Marca": "Vallejo",
+        "Hex": "#23264f"
+    },
+    {
+        "Nombre": "Dark Prussian Blue",
+        "Marca": "Vallejo",
+        "Hex": "#192c43"
+    },
+    {
+        "Nombre": "Alaitoc Blue",
+        "Marca": "Citadel",
+        "Hex": "#2e5689"
+    },
+    {
+        "Nombre": "Royal Blue",
+        "Marca": "Vallejo",
+        "Hex": "#41558d"
+    },
+    {
+        "Nombre": "Griffon Blue",
+        "Marca": "Army Painter",
+        "Hex": "#215383"
+    },
+    {
+        "Nombre": "Hoeth Blue",
+        "Marca": "Citadel",
+        "Hex": "#4f7fb5"
+    },
+    {
+        "Nombre": "Electric Blue",
+        "Marca": "Vallejo",
+        "Hex": "#008cbf"
+    },
+    {
+        "Nombre": "Cygnar Blue Highlight",
+        "Marca": "P3 Formula",
+        "Hex": "#1f75bb"
+    },
+    {
+        "Nombre": "Crystal Blue",
+        "Marca": "Army Painter",
+        "Hex": "#2e85c4"
+    },
+    {
+        "Nombre": "Altdorf Guard Blue",
+        "Marca": "Citadel",
+        "Hex": "#2157a1"
+    },
+    {
+        "Nombre": "Magic Blue",
+        "Marca": "Vallejo",
+        "Hex": "#0e88cb"
+    },
+    {
+        "Nombre": "Azure",
+        "Marca": "Vallejo",
+        "Hex": "#489fe4"
+    },
+    {
+        "Nombre": "Cold Black",
+        "Marca": "P3 Formula",
+        "Hex": "#121921"
+    },
+    {
+        "Nombre": "Marine Blue",
+        "Marca": "Army Painter",
+        "Hex": "#042d4a"
+    },
+    {
+        "Nombre": "Macragge Blue",
+        "Marca": "Citadel",
+        "Hex": "#2c3c65"
+    },
+    {
+        "Nombre": "Stormy Blue",
+        "Marca": "Vallejo",
+        "Hex": "#2d3f5a"
+    },
+    {
+        "Nombre": "Dark Blue",
+        "Marca": "Vallejo",
+        "Hex": "#142d53"
+    },
+    {
+        "Nombre": "Coal Black",
+        "Marca": "P3 Formula",
+        "Hex": "#18242e"
+    },
+    {
+        "Nombre": "Dark Sky",
+        "Marca": "Army Painter",
+        "Hex": "#1a2b3e"
+    },
+    {
+        "Nombre": "Sotek Green",
+        "Marca": "Citadel",
+        "Hex": "#056976"
+    },
+    {
+        "Nombre": "Turquoise",
+        "Marca": "Vallejo",
+        "Hex": "#03676f"
+    },
+    {
+        "Nombre": "Field Blue",
+        "Marca": "Vallejo",
+        "Hex": "#436872"
+    },
+    {
+        "Nombre": "Coal Black",
+        "Marca": "P3 Formula",
+        "Hex": "#005a61"
+    },
+    {
+        "Nombre": "Wizards Orb",
+        "Marca": "Army Painter",
+        "Hex": "#00726a"
+    },
+    {
+        "Nombre": "Temple Guard Blue",
+        "Marca": "Citadel",
+        "Hex": "#35998e"
+    },
+    {
+        "Nombre": "Foul Green",
+        "Marca": "Vallejo",
+        "Hex": "#239378"
+    },
+    {
+        "Nombre": "Blue Green",
+        "Marca": "Vallejo",
+        "Hex": "#1a9496"
+    },
+    {
+        "Nombre": "Meredius Blue",
+        "Marca": "P3 Formula",
+        "Hex": "#00b0b9"
+    },
+    {
+        "Nombre": "Elemental Bolt",
+        "Marca": "Army Painter",
+        "Hex": "#009a82"
+    },
+    {
+        "Nombre": "Thunderhawk Blue",
+        "Marca": "Citadel",
+        "Hex": "#417074"
+    },
+    {
+        "Nombre": "Turquoise",
+        "Marca": "Vallejo",
+        "Hex": "#03676f"
+    },
+    {
+        "Nombre": "Field Blue",
+        "Marca": "Vallejo",
+        "Hex": "#436872"
+    },
+    {
+        "Nombre": "Coal Black",
+        "Marca": "P3 Formula",
+        "Hex": "#005a61"
+    },
+    {
+        "Nombre": "Uniform Grey",
+        "Marca": "Army Painter",
+        "Hex": "#5e6a73"
+    },
+    {
+        "Nombre": "Incubi Darkness",
+        "Marca": "Citadel",
+        "Hex": "#094345"
+    },
+    {
+        "Nombre": "Scurvy Green",
+        "Marca": "Vallejo",
+        "Hex": "#09474e"
+    },
+    {
+        "Nombre": "Black Green",
+        "Marca": "Vallejo",
+        "Hex": "#19423e"
+    },
+    {
+        "Nombre": "Coal Black",
+        "Marca": "P3 Formula",
+        "Hex": "#005a61"
+    },
+    {
+        "Nombre": "Necromance Cloak",
+        "Marca": "Army Painter",
+        "Hex": "#3c3d37"
+    },
+    {
+        "Nombre": "Kabalite Green",
+        "Marca": "Citadel",
+        "Hex": "#008660"
+    },
+    {
+        "Nombre": "Foul Green",
+        "Marca": "Vallejo",
+        "Hex": "#239378"
+    },
+    {
+        "Nombre": "Park Green Flat",
+        "Marca": "Vallejo",
+        "Hex": "#008c5d"
+    },
+    {
+        "Nombre": "Gnarls Green",
+        "Marca": "P3 Formula",
+        "Hex": "#126232"
+    },
+    {
+        "Nombre": "Elemental Bolt",
+        "Marca": "Army Painter",
+        "Hex": "#009a82"
+    },
+    {
+        "Nombre": "Sybarite Green",
+        "Marca": "Citadel",
+        "Hex": "#36a062"
+    },
+    {
+        "Nombre": "Foul Green",
+        "Marca": "Vallejo",
+        "Hex": "#239378"
+    },
+    {
+        "Nombre": "Light Green",
+        "Marca": "Vallejo",
+        "Hex": "#00a850"
+    },
+    {
+        "Nombre": "Iosan Green",
+        "Marca": "P3 Formula",
+        "Hex": "#22a854"
+    },
+    {
+        "Nombre": "Goblin Green",
+        "Marca": "Army Painter",
+        "Hex": "#348941"
+    },
+    {
+        "Nombre": "Caliban Green",
+        "Marca": "Citadel",
+        "Hex": "#003b1d"
+    },
+    {
+        "Nombre": "Dark Green",
+        "Marca": "Vallejo",
+        "Hex": "#083c2a"
+    },
+    {
+        "Nombre": "Yellow Olive",
+        "Marca": "Vallejo",
+        "Hex": "#26392e"
+    },
+    {
+        "Nombre": "Cryx Bane Base",
+        "Marca": "P3 Formula",
+        "Hex": "#303924"
+    },
+    {
+        "Nombre": "Angel Green",
+        "Marca": "Army Painter",
+        "Hex": "#0c391d"
+    },
+    {
+        "Nombre": "Warpstone Glow",
+        "Marca": "Citadel",
+        "Hex": "#257326"
+    },
+    {
+        "Nombre": "Goblin Green",
+        "Marca": "Vallejo",
+        "Hex": "#23743c"
+    },
+    {
+        "Nombre": "Medium Olive",
+        "Marca": "Vallejo",
+        "Hex": "#226b2e"
+    },
+    {
+        "Nombre": "Gnarls Green",
+        "Marca": "P3 Formula",
+        "Hex": "#126232"
+    },
+    {
+        "Nombre": "Mouldy Clothes",
+        "Marca": "Army Painter",
+        "Hex": "#447b3a"
+    },
+    {
+        "Nombre": "Moot Green",
+        "Marca": "Citadel",
+        "Hex": "#57aa2d"
+    },
+    {
+        "Nombre": "Scorpion Green",
+        "Marca": "Vallejo",
+        "Hex": "#48b851"
+    },
+    {
+        "Nombre": "Lime Green",
+        "Marca": "Vallejo",
+        "Hex": "#6fae4e"
+    },
+    {
+        "Nombre": "Iosan Green",
+        "Marca": "P3 Formula",
+        "Hex": "#22a854"
+    },
+    {
+        "Nombre": "Jungle Green",
+        "Marca": "Army Painter",
+        "Hex": "#88ac2e"
+    },
+    {
+        "Nombre": "Waaagh! Flesh",
+        "Marca": "Citadel",
+        "Hex": "#275627"
+    },
+    {
+        "Nombre": "Mutation Green",
+        "Marca": "Vallejo",
+        "Hex": "#296934"
+    },
+    {
+        "Nombre": "Flat Green",
+        "Marca": "Vallejo",
+        "Hex": "#2a6531"
+    },
+    {
+        "Nombre": "Gnarls Green",
+        "Marca": "P3 Formula",
+        "Hex": "#126232"
+    },
+    {
+        "Nombre": "Greenskin",
+        "Marca": "Army Painter",
+        "Hex": "#136232"
+    },
+    {
+        "Nombre": "Warboss Green",
+        "Marca": "Citadel",
+        "Hex": "#3b7d54"
+    },
+    {
+        "Nombre": "Goblin Green",
+        "Marca": "Vallejo",
+        "Hex": "#23743c"
+    },
+    {
+        "Nombre": "Park Green Flat",
+        "Marca": "Vallejo",
+        "Hex": "#008c5d"
+    },
+    {
+        "Nombre": "Gnarls Green",
+        "Marca": "P3 Formula",
+        "Hex": "#126232"
+    },
+    {
+        "Nombre": "Mouldy Clothes",
+        "Marca": "Army Painter",
+        "Hex": "#447b3a"
+    },
+    {
+        "Nombre": "Skarsnik Green",
+        "Marca": "Citadel",
+        "Hex": "#5e9067"
+    },
+    {
+        "Nombre": "Foul Green",
+        "Marca": "Vallejo",
+        "Hex": "#239378"
+    },
+    {
+        "Nombre": "Intermediate Green",
+        "Marca": "Vallejo",
+        "Hex": "#49944f"
+    },
+    {
+        "Nombre": "Traitor Green",
+        "Marca": "P3 Formula",
+        "Hex": "#809065"
+    },
+    {
+        "Nombre": "Goblin Green",
+        "Marca": "Army Painter",
+        "Hex": "#348941"
+    },
+    {
+        "Nombre": "Castellan Green",
+        "Marca": "Citadel",
+        "Hex": "#384d20"
+    },
+    {
+        "Nombre": "Heavy Green",
+        "Marca": "Vallejo",
+        "Hex": "#566840"
+    },
+    {
+        "Nombre": "Reflective Green",
+        "Marca": "Vallejo",
+        "Hex": "#496244"
+    },
+    {
+        "Nombre": "Cryx Bane Base",
+        "Marca": "P3 Formula",
+        "Hex": "#303924"
+    },
+    {
+        "Nombre": "Elf Green",
+        "Marca": "Army Painter",
+        "Hex": "#495122"
+    },
+    {
+        "Nombre": "Death World Forest",
+        "Marca": "Citadel",
+        "Hex": "#666c2d"
+    },
+    {
+        "Nombre": "Camoflage Green",
+        "Marca": "Vallejo",
+        "Hex": "#71753a"
+    },
+    {
+        "Nombre": "Luftwaffe Cam. Green",
+        "Marca": "Vallejo",
+        "Hex": "#596b3f"
+    },
+    {
+        "Nombre": "Battledress Green",
+        "Marca": "P3 Formula",
+        "Hex": "#757232"
+    },
+    {
+        "Nombre": "Army Green",
+        "Marca": "Army Painter",
+        "Hex": "#6e7645"
+    },
+    {
+        "Nombre": "Loren Forest",
+        "Marca": "Citadel",
+        "Hex": "#5b7426"
+    },
+    {
+        "Nombre": "Uniform Green",
+        "Marca": "Vallejo",
+        "Hex": "#577a38"
+    },
+    {
+        "Nombre": "Ordic Olive",
+        "Marca": "P3 Formula",
+        "Hex": "#6e7e36"
+    },
+    {
+        "Nombre": "Straken Green",
+        "Marca": "Citadel",
+        "Hex": "#6e8611"
+    },
+    {
+        "Nombre": "Olive Green",
+        "Marca": "Vallejo",
+        "Hex": "#6a8b3a"
+    },
+    {
+        "Nombre": "Commando Green",
+        "Marca": "Army Painter",
+        "Hex": "#827b39"
+    },
+    {
+        "Nombre": "Nurgling Green",
+        "Marca": "Citadel",
+        "Hex": "#90a15f"
+    },
+    {
+        "Nombre": "Heavy Khaki",
+        "Marca": "Vallejo",
+        "Hex": "#9d965d"
+    },
+    {
+        "Nombre": "Middlestone",
+        "Marca": "Vallejo",
+        "Hex": "#9c9660"
+    },
+    {
+        "Nombre": "Scaly Hide",
+        "Marca": "Army Painter",
+        "Hex": "#859852"
+    },
+    {
+        "Nombre": "Elysian Green",
+        "Marca": "Citadel",
+        "Hex": "#81932e"
+    },
+    {
+        "Nombre": "Golden Olive",
+        "Marca": "Vallejo",
+        "Hex": "#78923b"
+    },
+    {
+        "Nombre": "Witch Brew",
+        "Marca": "Army Painter",
+        "Hex": "#92963e"
+    },
+    {
+        "Nombre": "Ogryn Camo",
+        "Marca": "Citadel",
+        "Hex": "#a9af42"
+    },
+    {
+        "Nombre": "Dead Flesh",
+        "Marca": "Vallejo",
+        "Hex": "#bcb686"
+    },
+    {
+        "Nombre": "Wurm Green",
+        "Marca": "P3 Formula",
+        "Hex": "#8fbe40"
+    },
+    {
+        "Nombre": "Jungle Green",
+        "Marca": "Army Painter",
+        "Hex": "#88ac2e"
+    },
+    {
+        "Nombre": "Zandri Dust",
+        "Marca": "Citadel",
+        "Hex": "#a89758"
+    },
+    {
+        "Nombre": "Dark Yellow",
+        "Marca": "Vallejo",
+        "Hex": "#9d9059"
+    },
+    {
+        "Nombre": "Rucksack Tan",
+        "Marca": "P3 Formula",
+        "Hex": "#b4973f"
+    },
+    {
+        "Nombre": "Ushabti Bone",
+        "Marca": "Citadel",
+        "Hex": "#c6c180"
+    },
+    {
+        "Nombre": "Pale Yellow",
+        "Marca": "Vallejo",
+        "Hex": "#d5c179"
+    },
+    {
+        "Nombre": "Sand Yellow",
+        "Marca": "Vallejo",
+        "Hex": "#d7bf75"
+    },
+    {
+        "Nombre": "Hammerfall Khaki",
+        "Marca": "P3 Formula",
+        "Hex": "#c8bf98"
+    },
+    {
+        "Nombre": "Screaming Skull",
+        "Marca": "Citadel",
+        "Hex": "#d9d8a6"
+    },
+    {
+        "Nombre": "Elfic Flesh",
+        "Marca": "Vallejo",
+        "Hex": "#cdc29c"
+    },
+    {
+        "Nombre": "Buff",
+        "Marca": "Vallejo",
+        "Hex": "#d2ca9f"
+    },
+    {
+        "Nombre": "Jack Bone",
+        "Marca": "P3 Formula",
+        "Hex": "#d6d4aa"
+    },
+    {
+        "Nombre": "Skeleton Bone",
+        "Marca": "Army Painter",
+        "Hex": "#d3c89d"
+    },
+    {
+        "Nombre": "Flayed One Flesh",
+        "Marca": "Citadel",
+        "Hex": "#f3ca8a"
+    },
+    {
+        "Nombre": "Bone White",
+        "Marca": "Vallejo",
+        "Hex": "#e8be86"
+    },
+    {
+        "Nombre": "Beige",
+        "Marca": "Vallejo",
+        "Hex": "#dbc58e"
+    },
+    {
+        "Nombre": "Corpse Pale",
+        "Marca": "Army Painter",
+        "Hex": "#edccad"
+    },
+    {
+        "Nombre": "Steel Legion Drab",
+        "Marca": "Citadel",
+        "Hex": "#695634"
+    },
+    {
+        "Nombre": "Heavy Brown",
+        "Marca": "Vallejo",
+        "Hex": "#705d41"
+    },
+    {
+        "Nombre": "English Uniform",
+        "Marca": "Vallejo",
+        "Hex": "#715833"
+    },
+    {
+        "Nombre": "Thornwood Green",
+        "Marca": "P3 Formula",
+        "Hex": "#65654b"
+    },
+    {
+        "Nombre": "Venom Wyrm",
+        "Marca": "Army Painter",
+        "Hex": "#6a653e"
+    },
+    {
+        "Nombre": "Tallarn Sand",
+        "Marca": "Citadel",
+        "Hex": "#ab7d00"
+    },
+    {
+        "Nombre": "Heavy Gold Brown",
+        "Marca": "Vallejo",
+        "Hex": "#ba8636"
+    },
+    {
+        "Nombre": "Gold Brown",
+        "Marca": "Vallejo",
+        "Hex": "#ba8636"
+    },
+    {
+        "Nombre": "Gun Corps Brown",
+        "Marca": "P3 Formula",
+        "Hex": "#937d48"
+    },
+    {
+        "Nombre": "Sulphide Ochre",
+        "Marca": "Army Painter",
+        "Hex": "#c68512"
+    },
+    {
+        "Nombre": "Karak Stone",
+        "Marca": "Citadel",
+        "Hex": "#c1a069"
+    },
+    {
+        "Nombre": "Iraqi Sand",
+        "Marca": "Vallejo",
+        "Hex": "#b89972"
+    },
+    {
+        "Nombre": "Beast Hide",
+        "Marca": "P3 Formula",
+        "Hex": "#b1956b"
+    },
+    {
+        "Nombre": "Kobold Skin",
+        "Marca": "Army Painter",
+        "Hex": "#c9a484"
+    },
+    {
+        "Nombre": "Bugmans Glow",
+        "Marca": "Citadel",
+        "Hex": "#8c5144"
+    },
+    {
+        "Nombre": "Tan",
+        "Marca": "Vallejo",
+        "Hex": "#9f4746"
+    },
+    {
+        "Nombre": "Saddle Brown",
+        "Marca": "Vallejo",
+        "Hex": "#89584f"
+    },
+    {
+        "Nombre": "Idrian Flesh",
+        "Marca": "P3 Formula",
+        "Hex": "#9b5e37"
+    },
+    {
+        "Nombre": "Werewolf Fur",
+        "Marca": "Army Painter",
+        "Hex": "#785e4e"
+    },
+    {
+        "Nombre": "Cadian Fleshtone",
+        "Marca": "Citadel",
+        "Hex": "#cb7953"
+    },
+    {
+        "Nombre": "Dwarf Skin",
+        "Marca": "Vallejo",
+        "Hex": "#cc7c67"
+    },
+    {
+        "Nombre": "Light Brown",
+        "Marca": "Vallejo",
+        "Hex": "#bf764e"
+    },
+    {
+        "Nombre": "Khardic Flesh",
+        "Marca": "P3 Formula",
+        "Hex": "#cb7b5b"
+    },
+    {
+        "Nombre": "Tanned Flesh",
+        "Marca": "Army Painter",
+        "Hex": "#bc745e"
+    },
+    {
+        "Nombre": "Kislev Flesh",
+        "Marca": "Citadel",
+        "Hex": "#dbad75"
+    },
+    {
+        "Nombre": "Flat Flesh",
+        "Marca": "Vallejo",
+        "Hex": "#d8a977"
+    },
+    {
+        "Nombre": "Midlund Flesh",
+        "Marca": "P3 Formula",
+        "Hex": "#f0a983"
+    },
+    {
+        "Nombre": "Ratskin Flesh",
+        "Marca": "Citadel",
+        "Hex": "#ad6b4c"
+    },
+    {
+        "Nombre": "Heavy Skintone",
+        "Marca": "Vallejo",
+        "Hex": "#aa7b62"
+    },
+    {
+        "Nombre": "Orange Brown",
+        "Marca": "Vallejo",
+        "Hex": "#b86f44"
+    },
+    {
+        "Nombre": "Bestigor Flesh",
+        "Marca": "Citadel",
+        "Hex": "#d38a57"
+    },
+    {
+        "Nombre": "Bronze Fleshtone",
+        "Marca": "Vallejo",
+        "Hex": "#db945c"
+    },
+    {
+        "Nombre": "Beige Red",
+        "Marca": "Vallejo",
+        "Hex": "#c79166"
+    },
+    {
+        "Nombre": "Troll Claws",
+        "Marca": "Army Painter",
+        "Hex": "#cb8b4e"
+    },
+    {
+        "Nombre": "Ungor Flesh",
+        "Marca": "Citadel",
+        "Hex": "#dbac63"
+    },
+    {
+        "Nombre": "Dark Flesh",
+        "Marca": "Vallejo",
+        "Hex": "#d9a262"
+    },
+    {
+        "Nombre": "Heartfire",
+        "Marca": "P3 Formula",
+        "Hex": "#f6b046"
+    },
+    {
+        "Nombre": "Mournfang Brown",
+        "Marca": "Citadel",
+        "Hex": "#681104"
+    },
+    {
+        "Nombre": "Terracota",
+        "Marca": "Vallejo",
+        "Hex": "#6b1306"
+    },
+    {
+        "Nombre": "Hull Red",
+        "Marca": "Vallejo",
+        "Hex": "#522724"
+    },
+    {
+        "Nombre": "Sanguine Base",
+        "Marca": "P3 Formula",
+        "Hex": "#6c160f"
+    },
+    {
+        "Nombre": "Chaotic Red",
+        "Marca": "Army Painter",
+        "Hex": "#6c1e10"
+    },
+    {
+        "Nombre": "Skrag Brown",
+        "Marca": "Citadel",
+        "Hex": "#954b00"
+    },
+    {
+        "Nombre": "Parasite Brown",
+        "Marca": "Vallejo",
+        "Hex": "#b1481f"
+    },
+    {
+        "Nombre": "Flat Earth",
+        "Marca": "Vallejo",
+        "Hex": "#87643c"
+    },
+    {
+        "Nombre": "Bloodstone",
+        "Marca": "P3 Formula",
+        "Hex": "#9e4822"
+    },
+    {
+        "Nombre": "Monster Brown",
+        "Marca": "Army Painter",
+        "Hex": "#855c2a"
+    },
+    {
+        "Nombre": "Deathclaw Brown",
+        "Marca": "Citadel",
+        "Hex": "#ba6952"
+    },
+    {
+        "Nombre": "Orange Brown",
+        "Marca": "Vallejo",
+        "Hex": "#b86f44"
+    },
+    {
+        "Nombre": "Khardic Flesh",
+        "Marca": "P3 Formula",
+        "Hex": "#cb7b5b"
+    },
+    {
+        "Nombre": "Tanned Flesh",
+        "Marca": "Army Painter",
+        "Hex": "#bc745e"
+    },
+    {
+        "Nombre": "XV-88",
+        "Marca": "Citadel",
+        "Hex": "#7b4d1c"
+    },
+    {
+        "Nombre": "Leather Brown",
+        "Marca": "Vallejo",
+        "Hex": "#7b5d2a"
+    },
+    {
+        "Nombre": "English Uniform",
+        "Marca": "Vallejo",
+        "Hex": "#715833"
+    },
+    {
+        "Nombre": "Idrian Flesh",
+        "Marca": "P3 Formula",
+        "Hex": "#9b5e37"
+    },
+    {
+        "Nombre": "Leather Brown",
+        "Marca": "Army Painter",
+        "Hex": "#764823"
+    },
+    {
+        "Nombre": "Tau Light Ochre",
+        "Marca": "Citadel",
+        "Hex": "#c26e02"
+    },
+    {
+        "Nombre": "Heavy Ochre",
+        "Marca": "Vallejo",
+        "Hex": "#a87536"
+    },
+    {
+        "Nombre": "Ochre Brown",
+        "Marca": "Vallejo",
+        "Hex": "#a77237"
+    },
+    {
+        "Nombre": "Bloodtracker Brown",
+        "Marca": "P3 Formula",
+        "Hex": "#a66a28"
+    },
+    {
+        "Nombre": "Fire Lizard",
+        "Marca": "Army Painter",
+        "Hex": "#d67128"
+    },
+    {
+        "Nombre": "Balor Brown",
+        "Marca": "Citadel",
+        "Hex": "#915e02"
+    },
+    {
+        "Nombre": "Leather Brown",
+        "Marca": "Vallejo",
+        "Hex": "#7b5d2a"
+    },
+    {
+        "Nombre": "Flat Earth",
+        "Marca": "Vallejo",
+        "Hex": "#87643c"
+    },
+    {
+        "Nombre": "Bootstrap Leather",
+        "Marca": "P3 Formula",
+        "Hex": "#956939"
+    },
+    {
+        "Nombre": "Monster Brown",
+        "Marca": "Army Painter",
+        "Hex": "#855c2a"
+    },
+    {
+        "Nombre": "Zamesi Desert",
+        "Marca": "Citadel",
+        "Hex": "#e0a503"
+    },
+    {
+        "Nombre": "Plague Brown",
+        "Marca": "Vallejo",
+        "Hex": "#cc9b34"
+    },
+    {
+        "Nombre": "Dark Flesh",
+        "Marca": "Vallejo",
+        "Hex": "#d9a262"
+    },
+    {
+        "Nombre": "Moldy Ochre",
+        "Marca": "P3 Formula",
+        "Hex": "#ddb43e"
+    },
+    {
+        "Nombre": "Phoenix Flames",
+        "Marca": "Army Painter",
+        "Hex": "#faa61a"
+    },
+    {
+        "Nombre": "Rhinox Hide",
+        "Marca": "Citadel",
+        "Hex": "#4e3433"
+    },
+    {
+        "Nombre": "Dark Fleshtone",
+        "Marca": "Vallejo",
+        "Hex": "#4f2b26"
+    },
+    {
+        "Nombre": "German Cam. Black Brown",
+        "Marca": "Vallejo",
+        "Hex": "#553528"
+    },
+    {
+        "Nombre": "Battlefield Brown",
+        "Marca": "P3 Formula",
+        "Hex": "#32251c"
+    },
+    {
+        "Nombre": "Dirt Spatter",
+        "Marca": "Army Painter",
+        "Hex": "#5e3827"
+    },
+    {
+        "Nombre": "Doombull Brown",
+        "Marca": "Citadel",
+        "Hex": "#5e0605"
+    },
+    {
+        "Nombre": "Terracota",
+        "Marca": "Vallejo",
+        "Hex": "#6b1306"
+    },
+    {
+        "Nombre": "Hull Red",
+        "Marca": "Vallejo",
+        "Hex": "#522724"
+    },
+    {
+        "Nombre": "Sanguine Base",
+        "Marca": "P3 Formula",
+        "Hex": "#6c160f"
+    },
+    {
+        "Nombre": "Chaotic Red",
+        "Marca": "Army Painter",
+        "Hex": "#6c1e10"
+    },
+    {
+        "Nombre": "Tuskgor Fur",
+        "Marca": "Citadel",
+        "Hex": "#8e3734"
+    },
+    {
+        "Nombre": "Heavy Red",
+        "Marca": "Vallejo",
+        "Hex": "#943238"
+    },
+    {
+        "Nombre": "Cavalry Brown",
+        "Marca": "Vallejo",
+        "Hex": "#853f3d"
+    },
+    {
+        "Nombre": "Skorne Red",
+        "Marca": "P3 Formula",
+        "Hex": "#b01f24"
+    },
+    {
+        "Nombre": "Vampire Red",
+        "Marca": "Army Painter",
+        "Hex": "#981d34"
+    },
+    {
+        "Nombre": "Dryad Bark",
+        "Marca": "Citadel",
+        "Hex": "#3b342e"
+    },
+    {
+        "Nombre": "Charred Brown",
+        "Marca": "Vallejo",
+        "Hex": "#39343b"
+    },
+    {
+        "Nombre": "Leather Brown",
+        "Marca": "Vallejo",
+        "Hex": "#4a4639"
+    },
+    {
+        "Nombre": "Battlefield Brown",
+        "Marca": "P3 Formula",
+        "Hex": "#32251c"
+    },
+    {
+        "Nombre": "Necromance Cloak",
+        "Marca": "Army Painter",
+        "Hex": "#3c3d37"
+    },
+    {
+        "Nombre": "Gorthor Brown",
+        "Marca": "Citadel",
+        "Hex": "#6e4e46"
+    },
+    {
+        "Nombre": "Heavy Sienna",
+        "Marca": "Vallejo",
+        "Hex": "#744642"
+    },
+    {
+        "Nombre": "Burnt Umber",
+        "Marca": "Vallejo",
+        "Hex": "#665148"
+    },
+    {
+        "Nombre": "Thornwood Green",
+        "Marca": "P3 Formula",
+        "Hex": "#65654b"
+    },
+    {
+        "Nombre": "Dark Stone",
+        "Marca": "Army Painter",
+        "Hex": "#605752"
+    },
+    {
+        "Nombre": "Baneblade Brown",
+        "Marca": "Citadel",
+        "Hex": "#99826b"
+    },
+    {
+        "Nombre": "Khaki",
+        "Marca": "Vallejo",
+        "Hex": "#8c806d"
+    },
+    {
+        "Nombre": "Tan Earth",
+        "Marca": "Vallejo",
+        "Hex": "#9c7962"
+    },
+    {
+        "Nombre": "Cryx Bane Highlight",
+        "Marca": "P3 Formula",
+        "Hex": "#93907d"
+    },
+    {
+        "Nombre": "Filthy Cape",
+        "Marca": "Army Painter",
+        "Hex": "#7c7863"
+    },
+    {
+        "Nombre": "Mechanicus Standard Grey",
+        "Marca": "Citadel",
+        "Hex": "#454e50"
+    },
+    {
+        "Nombre": "Cold Grey",
+        "Marca": "Vallejo",
+        "Hex": "#54646d"
+    },
+    {
+        "Nombre": "USA Olive Drab",
+        "Marca": "Vallejo",
+        "Hex": "#3b4947"
+    },
+    {
+        "Nombre": "Greatcoat Grey",
+        "Marca": "P3 Formula",
+        "Hex": "#4d5861"
+    },
+    {
+        "Nombre": "Hardened Carapace",
+        "Marca": "Army Painter",
+        "Hex": "#4c473f"
+    },
+    {
+        "Nombre": "Dawnstone",
+        "Marca": "Citadel",
+        "Hex": "#7b7e74"
+    },
+    {
+        "Nombre": "Khaki",
+        "Marca": "Vallejo",
+        "Hex": "#8c806d"
+    },
+    {
+        "Nombre": "Dark Sea Grey",
+        "Marca": "Vallejo",
+        "Hex": "#787d7a"
+    },
+    {
+        "Nombre": "Bastion Grey",
+        "Marca": "P3 Formula",
+        "Hex": "#777965"
+    },
+    {
+        "Nombre": "Field Grey",
+        "Marca": "Army Painter",
+        "Hex": "#787c78"
+    },
+    {
+        "Nombre": "Administratum Grey",
+        "Marca": "Citadel",
+        "Hex": "#9da299"
+    },
+    {
+        "Nombre": "Heavy Blue Grey",
+        "Marca": "Vallejo",
+        "Hex": "#9ca7a7"
+    },
+    {
+        "Nombre": "Blue Grey Pale",
+        "Marca": "Vallejo",
+        "Hex": "#9ea7a5"
+    },
+    {
+        "Nombre": "Ironhull Grey",
+        "Marca": "P3 Formula",
+        "Hex": "#8e969b"
+    },
+    {
+        "Nombre": "Ash Grey",
+        "Marca": "Army Painter",
+        "Hex": "#a2a5a4"
+    },
+    {
+        "Nombre": "Celestra Grey",
+        "Marca": "Citadel",
+        "Hex": "#9caeae"
+    },
+    {
+        "Nombre": "Light Sea Grey",
+        "Marca": "Vallejo",
+        "Hex": "#97b4b5"
+    },
+    {
+        "Nombre": "Ulthuan Grey",
+        "Marca": "Citadel",
+        "Hex": "#d2e4df"
+    },
+    {
+        "Nombre": "Verdigris",
+        "Marca": "Vallejo",
+        "Hex": "#b3ceca"
+    },
+    {
+        "Nombre": "Silver Grey",
+        "Marca": "Vallejo",
+        "Hex": "#d8dfd5"
+    },
+    {
+        "Nombre": "Underbelly Blue",
+        "Marca": "P3 Formula",
+        "Hex": "#c0d4da"
+    },
+    {
+        "Nombre": "Spaceship Exterior",
+        "Marca": "Army Painter",
+        "Hex": "#cdced0"
+    },
+    {
+        "Nombre": "Rakarth Flesh",
+        "Marca": "Citadel",
+        "Hex": "#aba495"
+    },
+    {
+        "Nombre": "Stone Grey",
+        "Marca": "Vallejo",
+        "Hex": "#959980"
+    },
+    {
+        "Nombre": "Trollblood Highlight",
+        "Marca": "P3 Formula",
+        "Hex": "#bab4a3"
+    },
+    {
+        "Nombre": "Pallid Wych Flesh",
+        "Marca": "Citadel",
+        "Hex": "#d6d5c4"
+    },
+    {
+        "Nombre": "Elfic Flesh",
+        "Marca": "Vallejo",
+        "Hex": "#cdc29c"
+    },
+    {
+        "Nombre": "Silver Grey",
+        "Marca": "Vallejo",
+        "Hex": "#d8dfd5"
+    },
+    {
+        "Nombre": "Jack Bone",
+        "Marca": "P3 Formula",
+        "Hex": "#d6d4aa"
+    },
+    {
+        "Nombre": "Drake Tooth",
+        "Marca": "Army Painter",
+        "Hex": "#cfcbb4"
+    },
+    {
+        "Nombre": "Abaddon Black",
+        "Marca": "Citadel",
+        "Hex": "#010100"
+    },
+    {
+        "Nombre": "Black",
+        "Marca": "Vallejo",
+        "Hex": "#000000"
+    },
+    {
+        "Nombre": "Glossy Black",
+        "Marca": "Vallejo",
+        "Hex": "#010101"
+    },
+    {
+        "Nombre": "Thamar Black",
+        "Marca": "P3 Formula",
+        "Hex": "#040707"
+    },
+    {
+        "Nombre": "Matt Black",
+        "Marca": "Army Painter",
+        "Hex": "#231f20"
+    },
+    {
+        "Nombre": "Eshin Grey",
+        "Marca": "Citadel",
+        "Hex": "#535659"
+    },
+    {
+        "Nombre": "Cold Grey",
+        "Marca": "Vallejo",
+        "Hex": "#54646d"
+    },
+    {
+        "Nombre": "Grey Green",
+        "Marca": "Vallejo",
+        "Hex": "#565a60"
+    },
+    {
+        "Nombre": "Greatcoat Grey",
+        "Marca": "P3 Formula",
+        "Hex": "#4d5861"
+    },
+    {
+        "Nombre": "Dark Stone",
+        "Marca": "Army Painter",
+        "Hex": "#605752"
+    },
+    {
+        "Nombre": "Skavenblight Dinge",
+        "Marca": "Citadel",
+        "Hex": "#4f4840"
+    },
+    {
+        "Nombre": "Beasty Brown",
+        "Marca": "Vallejo",
+        "Hex": "#55432d"
+    },
+    {
+        "Nombre": "Leather Brown",
+        "Marca": "Vallejo",
+        "Hex": "#4a4639"
+    },
+    {
+        "Nombre": "Cryx Bane Base",
+        "Marca": "P3 Formula",
+        "Hex": "#303924"
+    },
+    {
+        "Nombre": "Hardened Carapace",
+        "Marca": "Army Painter",
+        "Hex": "#4c473f"
+    },
+    {
+        "Nombre": "Stormvermin Fur",
+        "Marca": "Citadel",
+        "Hex": "#7d736a"
+    },
+    {
+        "Nombre": "Khaki",
+        "Marca": "Vallejo",
+        "Hex": "#8c806d"
+    },
+    {
+        "Nombre": "German Cam. Pale Brown",
+        "Marca": "Vallejo",
+        "Hex": "#82685e"
+    },
+    {
+        "Nombre": "Bastion Grey",
+        "Marca": "P3 Formula",
+        "Hex": "#777965"
+    },
+    {
+        "Nombre": "Cultist Robe",
+        "Marca": "Army Painter",
+        "Hex": "#756e60"
+    },
+    {
+        "Nombre": "Dark Reaper",
+        "Marca": "Citadel",
+        "Hex": "#3B5150"
+    },
+    {
+        "Nombre": "Cayman Green",
+        "Marca": "Vallejo",
+        "Hex": "#285648"
+    },
+    {
+        "Nombre": "USA Olive Drab",
+        "Marca": "Vallejo",
+        "Hex": "#3b4947"
+    },
+    {
+        "Nombre": "Greatcoat Grey",
+        "Marca": "P3 Formula",
+        "Hex": "#4d5861"
+    },
+    {
+        "Nombre": "Necromance Cloak",
+        "Marca": "Army Painter",
+        "Hex": "#3c3d37"
+    },
+    {
+        "Nombre": "Death Guard Armor",
+        "Marca": "Citadel",
+        "Hex": "#848A66"
+    },
+    {
+        "Nombre": "Heavy Warm Grey",
+        "Marca": "Vallejo",
+        "Hex": "#939066"
+    },
+    {
+        "Nombre": "Green Grey",
+        "Marca": "Vallejo",
+        "Hex": "#827e61"
+    },
+    {
+        "Nombre": "Traitor Green",
+        "Marca": "P3 Formula",
+        "Hex": "#809065"
+    },
+    {
+        "Nombre": "Combat Fatigue",
+        "Marca": "Army Painter",
+        "Hex": "#878e5c"
+    },
+    {
+        "Nombre": "Baharroth Blue",
+        "Marca": "Citadel",
+        "Hex": "#58C1CD"
+    },
+    {
+        "Nombre": "Heavy Blue Grey",
+        "Marca": "Vallejo",
+        "Hex": "#9ca7a7"
+    },
+    {
+        "Nombre": "Pale Blue",
+        "Marca": "Vallejo",
+        "Hex": "#83b5b2"
+    },
+    {
+        "Nombre": "Arcane Blue",
+        "Marca": "P3 Formula",
+        "Hex": "#7acfd9"
+    },
+    {
+        "Nombre": "Toxic Mist",
+        "Marca": "Army Painter",
+        "Hex": "#39c0c5"
+    },
+    {
+        "Nombre": "Blue Horror",
+        "Marca": "Citadel",
+        "Hex": "#A2BAD2"
+    },
+    {
+        "Nombre": "Ghost Grey",
+        "Marca": "Vallejo",
+        "Hex": "#a7c5db"
+    },
+    {
+        "Nombre": "Pale Grey Blue",
+        "Marca": "Vallejo",
+        "Hex": "#bacdd0"
+    },
+    {
+        "Nombre": "Underbelly Blue",
+        "Marca": "P3 Formula",
+        "Hex": "#c0d4da"
+    },
+    {
+        "Nombre": "Gorgon Hide",
+        "Marca": "Army Painter",
+        "Hex": "#c7d2e4"
+    },
+    {
+        "Nombre": "Dechala Lilac",
+        "Marca": "Citadel",
+        "Hex": "#B69FCC"
+    },
+    {
+        "Nombre": "Wolf Grey",
+        "Marca": "Vallejo",
+        "Hex": "#90a2bc"
+    },
+    {
+        "Nombre": "Blue Grey Pale",
+        "Marca": "Vallejo",
+        "Hex": "#9ea7a5"
+    },
+    {
+        "Nombre": "Ironhull Grey",
+        "Marca": "P3 Formula",
+        "Hex": "#8e969b"
+    },
+    {
+        "Nombre": "Oozing Purple",
+        "Marca": "Army Painter",
+        "Hex": "#aa94b4"
+    },
+    {
+        "Nombre": "Dorn Yellow",
+        "Marca": "Citadel",
+        "Hex": "#FFF200"
+    },
+    {
+        "Nombre": "Moon Yellow",
+        "Marca": "Vallejo",
+        "Hex": "#fff103"
+    },
+    {
+        "Nombre": "Lemon Yellow",
+        "Marca": "Vallejo",
+        "Hex": "#fef10e"
+    },
+    {
+        "Nombre": "Cygnus Yellow",
+        "Marca": "P3 Formula",
+        "Hex": "#f3e72e"
+    },
+    {
+        "Nombre": "Babe Blonde",
+        "Marca": "Army Painter",
+        "Hex": "#f8dd0d"
+    },
+    {
+        "Nombre": "Fulgrim Pink",
+        "Marca": "Citadel",
+        "Hex": "#F4AFCD"
+    },
+    {
+        "Nombre": "Pale Flesh",
+        "Marca": "Vallejo",
+        "Hex": "#f6bdb3"
+    },
+    {
+        "Nombre": "Sky Grey",
+        "Marca": "Vallejo",
+        "Hex": "#b3b6b2"
+    },
+    {
+        "Nombre": "Carnal Pink",
+        "Marca": "P3 Formula",
+        "Hex": "#fae2ec"
+    },
+    {
+        "Nombre": "Spaceship Exterior",
+        "Marca": "Army Painter",
+        "Hex": "#cdced0"
+    },
+    {
+        "Nombre": "Gauss Blaster Green",
+        "Marca": "Citadel",
+        "Hex": "#84C3AA"
+    },
+    {
+        "Nombre": "Verdigris",
+        "Marca": "Vallejo",
+        "Hex": "#b3ceca"
+    },
+    {
+        "Nombre": "Grey Grey",
+        "Marca": "Vallejo",
+        "Hex": "#aecbbb"
+    },
+    {
+        "Nombre": "Arcane Blue",
+        "Marca": "P3 Formula",
+        "Hex": "#7acfd9"
+    },
+    {
+        "Nombre": "Kraken Skin",
+        "Marca": "Army Painter",
+        "Hex": "#71c591"
+    },
+    {
+        "Nombre": "Krieg Khaki",
+        "Marca": "Citadel",
+        "Hex": "#C0BD81"
+    },
+    {
+        "Nombre": "Dead Flesh",
+        "Marca": "Vallejo",
+        "Hex": "#bcb686"
+    },
+    {
+        "Nombre": "Pale Sand",
+        "Marca": "Vallejo",
+        "Hex": "#d1c49c"
+    },
+    {
+        "Nombre": "Hammerfall Khaki",
+        "Marca": "P3 Formula",
+        "Hex": "#c8bf98"
+    },
+    {
+        "Nombre": "Necrotic Flesh",
+        "Marca": "Army Painter",
+        "Hex": "#bfc292"
+    },
+    {
+        "Nombre": "Lugganath Orange",
+        "Marca": "Citadel",
+        "Hex": "#F79E86"
+    },
+    {
+        "Nombre": "Rosy Flesh",
+        "Marca": "Vallejo",
+        "Hex": "#f89e84"
+    },
+    {
+        "Nombre": "Salmon Rose",
+        "Marca": "Vallejo",
+        "Hex": "#f89d87"
+    },
+    {
+        "Nombre": "Midlund Flesh",
+        "Marca": "P3 Formula",
+        "Hex": "#f0a983"
+    },
+    {
+        "Nombre": "Centaur Skin",
+        "Marca": "Army Painter",
+        "Hex": "#deaba0"
+    }
+]
