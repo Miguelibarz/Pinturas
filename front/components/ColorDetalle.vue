@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="6">
+  <v-col cols="4">
     <v-card class="pa-4 d-flex">
       <v-col cols="4" class="color-square pa-2" :style="{ backgroundColor: color?.codigoHex + ' !important' }">
       </v-col>

@@ -3,12 +3,13 @@ import os
 import shutil
 from fastapi import Depends, FastAPI, File, HTTPException, UploadFile
 from fastapi.responses import JSONResponse
+from sqlalchemy import func
 from sqlalchemy.orm import Session
 from fastapi.middleware.cors import CORSMiddleware
 
 from . import crud, models, schemas
 from .database import SessionLocal, engine
-from typing import List
+from typing import List, Optional
 
 models.Base.metadata.create_all(bind=engine)
 
@@ -95,6 +96,14 @@ def update_modelo(
 def delete_modelo(modelo_id: int, db: Session = Depends(get_db)):
     return crud.delete_modelo(db=db, modelo_id=modelo_id)
 
+@app.get("/search_modelo", response_model=List[schemas.Modelo], tags=["Modelos"])
+def search_modelo(search: Optional[str] = None, skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    query = db.query(models.Modelo)
+    
+    if search:
+        query = query.filter(models.Modelo.nombre.ilike(f"%{search}%"))
+
+    return query.offset(skip).limit(limit).all()
 
 # PARTES operations
 @app.post("/partes/", response_model=schemas.Parte, tags=["Partes"])
@@ -146,6 +155,15 @@ def update_parte(
 def delete_parte(parte_id: int, db: Session = Depends(get_db)):
     return crud.delete_parte(db=db, parte_id=parte_id)
 
+
+@app.get("/search_partes", response_model=List[schemas.Parte], tags=["Partes"])
+def search_partes(search: Optional[str] = None, skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    query = db.query(models.Parte)
+    
+    if search:
+        query = query.filter(models.Parte.nombre.ilike(f"%{search}%"))
+
+    return query.offset(skip).limit(limit).all()
 
 # PASOS operations
 @app.post("/pasos/", response_model=schemas.Paso, tags=["Pasos"])
@@ -307,6 +325,15 @@ def import_colores_from_json(db: Session = Depends(get_db)):
         return JSONResponse(
             status_code=500, content={"message": f"Error al importar datos de colores: {e}"}
         )
+
+@app.get("/search_colores", response_model=List[schemas.Color], tags=["Colores"])
+def search_colores(search: Optional[str] = None, skip: int = 0, limit: int = 100, db: Session = Depends(get_db)):
+    query = db.query(models.Color)
+    
+    if search:
+        query = query.filter(models.Color.nombre.ilike(f"%{search}%"))
+
+    return query.offset(skip).limit(limit).all()
 
 
 # IMAGEN

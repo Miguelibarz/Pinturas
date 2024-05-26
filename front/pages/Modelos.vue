@@ -1,11 +1,16 @@
 <template>
   <div>
     <v-row>
+      <v-col cols="12">
+        <v-text-field v-model="search" label="Buscar" solo-inverted></v-text-field>
+      </v-col>
+    </v-row>
+    <v-row>
       <v-col cols="10">
         <v-card-title class="text-h4">Lista de Modelos</v-card-title>
       </v-col>
       <v-col cols="2" class="d-flex justify-end align-center pa-6">
-        <v-btn to="Add/modelo" >
+        <v-btn to="Add/modelo">
           <v-icon>mdi-plus</v-icon>
         </v-btn>
       </v-col>
@@ -36,7 +41,15 @@ export default {
       perPage: 10,
       totalItems: 0,
       loading: false,
+      search: '', 
     };
+  },
+  watch: {
+    search(newSearch) {
+      this.currentPage = 1; 
+      this.modelos = []; 
+      this.fetchModelos(); 
+    }
   },
   computed: {
     totalPages() {
@@ -56,7 +69,7 @@ export default {
         if (this.loading) return; // Avoid multiple simultaneous requests
         this.loading = true;
 
-        const response = await fetch(`${process.env.API_URL}/modelos?skip=${(this.currentPage - 1) * this.perPage}&limit=${this.perPage}`);
+        const response = await fetch(`${process.env.API_URL}/search_modelo?search=${this.search}&skip=${(this.currentPage - 1) * this.perPage}&limit=${this.perPage}`);
         const data = await response.json();
         this.modelos.push(...data);
         this.loading = false;
