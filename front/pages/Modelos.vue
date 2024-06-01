@@ -72,9 +72,10 @@ export default {
         const response = await fetch(`${process.env.API_URL}/search_modelo?search=${this.search}&skip=${(this.currentPage - 1) * this.perPage}&limit=${this.perPage}`);
         const data = await response.json();
         this.modelos.push(...data);
+
         this.loading = false;
 
-        // Opcional: Obtener el total de modelos para la paginación
+        // Obtener el total de modelos para la paginación
         const totalResponse = await fetch(`${process.env.API_URL}/modelos/count`);
         const totalData = await totalResponse.json();
         this.totalItems = totalData.count;

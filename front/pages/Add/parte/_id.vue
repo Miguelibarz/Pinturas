@@ -4,8 +4,10 @@
         <v-form @submit.prevent="crearParte">
             <v-text-field v-model="nombre" label="Nombre" required></v-text-field>
             <input type="file" ref="fileInput" @change="handleFileChange" accept="image/*" />
-            <v-divider class="py-2"/>
+            <v-divider class="py-2" />
             <v-btn type="submit" color="primary">Guardar</v-btn>
+            <v-btn @click="navigateToModel" color="error">Cancelar</v-btn>
+
         </v-form>
     </v-card>
 </template>
@@ -30,6 +32,13 @@ export default {
             //crea nombre unico con el nombre de la imagen y la fecha
             this.imagen = currentDate.getTime() + "-" + this.file.name;
             console.log(this.imagen);
+        },
+        navigateToModel() {
+            if (this.$route) {
+                this.$router.push(`/modelos/${this.$route.params.id}`);
+            } else {
+                console.error('Route is not available');
+            }
         },
         crearParte() {
             const requestBody = {

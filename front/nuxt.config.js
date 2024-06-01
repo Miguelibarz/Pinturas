@@ -1,9 +1,8 @@
 import colors from 'vuetify/es5/util/colors'
 
 export default {
-
   env: {
-    API_URL: process.env.API_URL || 'http://localhost:8000'
+    API_URL: process.env.API_URL || 'http://localhost:5000' //5000 para publico 8000 para pruebas
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -64,6 +63,9 @@ export default {
       }
     }
   },
+
+  // Specify the build directory
+  buildDir: 'app/dist',
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

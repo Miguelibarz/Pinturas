@@ -293,7 +293,7 @@ def delete_color(color_id: int, db: Session = Depends(get_db)):
 @app.post("/import-colores/", tags=["Colores"])
 def import_colores_from_json(db: Session = Depends(get_db)):
     try:
-        file_path = os.path.join("front/static/", "paints.json")  # Ruta del archivo de pinturas
+        file_path = os.path.join("front/static/", "paints.json")  # Ruta del archivo de pinturas, revisar al publicar/mover
         if not os.path.exists(file_path):
             return JSONResponse(
                 status_code=404, content={"message": "paints.json no encontrado"}

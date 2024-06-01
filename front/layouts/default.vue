@@ -76,7 +76,7 @@ export default {
         }
       ],
       miniVariant: false,
-      title: 'MiguelPedia',
+      title: 'ColorCraft',
     }
   },
 

@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="6">
+  <v-col cols="4">
     <v-card class="pa-4 tarjeta-modelos">
 
       <router-link :to="'/modelos/' + modelo.id" class="enlace">
